@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block container %}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Change the face of tech.</h1>
+        <p class="tagline">With a new wave of diverse, innovative coders.</p>
+        
+        {% if messages %}
+          {% for message in messages %}
+                <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">
+                {{ message }}
+                </div>
+          {% endfor %}
+        {% endif %}
+
+    </div>
+</div>
+
+<main class="container">
+    <div class="row">
+            <div class="col-md-4">
+                <h2>Apply</h2>
+                    <p>I want to be a 2015 fellow.</p>
+            <p><a class="btn btn-default" href="" role="button">Be the first to receive our application »</a></p>
+            </div>
+            <div class="col-md-4">
+                    <h2>Contribute</h2>
+                    <p>I'm an individual who wants to give time or donate to the Code for Progress community</p>
+                    <p><a class="btn btn-default" href="" role="button">Get in touch »</a></p>
+            </div>
+        <div class="col-md-4">
+                    <h2>Partner</h2>
+                    <p>I'm part of an organization or company that wants to work with Code for Progress.</p>
+                    <p><a class="btn btn-default" href="" role="button">Reach out »</a></p>
+            </div>
+    </div>
+
+</main>
+
+{% endblock %}
