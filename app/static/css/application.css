@@ -74,11 +74,9 @@ footer a:focus {
 
 .jumbotron {
     background-color: #444;
-    /* Temp image from unsplash */
-    background-image: url('../img/jobfair.jpg');
+    background-image: url('../img/grad_banner.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
     color: #fff;
     text-align: center;
 }
