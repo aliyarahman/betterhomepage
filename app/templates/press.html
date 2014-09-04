@@ -1,6 +1,21 @@
 {% extends "base.html" %}
 {% block container %}
 
-<h1>This is the PRESS Page!!</h1>
+    <div class="container">
+        <h1>CFP in the news</h1>
+        <p class="tagline">
+            links for articles or news segments
+
+        </p>
+        
+        {% if messages %}
+          {% for message in messages %}
+                <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">
+                {{ message }}
+                </div>
+          {% endfor %}
+        {% endif %}
+
+    </div>
 
 {% endblock %}
