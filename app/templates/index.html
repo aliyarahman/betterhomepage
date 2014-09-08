@@ -5,9 +5,10 @@
     <div class="container">
          <div class='change'>
         <h1>Change the face of tech.</h1>
-         </div id='tag'>
+         </div>
+         <div id='tag'>
         <p class="tagline">By fostering a new wave of social justice-minded coders.</p>
-        
+        </div>
         {% if messages %}
           {% for message in messages %}
                 <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">

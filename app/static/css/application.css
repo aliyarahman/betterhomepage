@@ -91,7 +91,7 @@ footer a:focus {
 }
 .jumbotron .tagline {
     position: relative;
-    margin-top: 80px;
+    margin-top: 40px;
     text-shadow: 4px 4px 8px #696969;
 }
 .jumbotron input.form-control {
@@ -134,10 +134,10 @@ footer a:focus {
 
 .change {
     position: relative;
-    top: -310px;
+    top: -320px;
 }
 
 #tag {
     position: relative;
-    top: 200px;
+    top: 5px;
 }
