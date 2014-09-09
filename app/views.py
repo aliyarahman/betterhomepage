@@ -21,3 +21,6 @@ def partner(request):
 
 def press(request):
     return render(request, "press.html")
+
+def fellows(request):
+    return render(request, "fellows.html")
