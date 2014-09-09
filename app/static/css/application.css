@@ -10,6 +10,7 @@ body {
 
 header {
     background-color: #fff;
+    position: relative;
 }
 
 a {
@@ -193,5 +194,7 @@ footer a:focus {
 }
 
 .logo {
-    margin-bottom: 0;
+    position: relative;
+    top: 0;
+    bottom: 0;
 }
