@@ -8,6 +8,10 @@ body {
     background-color: #aebe37;
 }
 
+header {
+    background-color: #fff;
+}
+
 a {
     color: #aebe37;
 }
@@ -57,6 +61,7 @@ a:focus {
 
 .navbar-toggle .icon-bar {
     background-color: #aebe37;
+    top: -300px;
 }
 
 /* Footer */
@@ -140,4 +145,53 @@ footer a:focus {
 #tag {
     position: relative;
     top: 5px;
+}
+
+.jumbotron-about {
+    background-color: #444;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.jumbotron-press {
+    background-color: #444;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.jumbotron-apply {
+    background-color: #444;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.jumbotron-donate {
+    background-color: #444;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.jumbotron-partner {
+    background-color: #444;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 0;
 }
