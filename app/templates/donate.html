@@ -3,12 +3,40 @@
 
 <div class="jumbotron-donate">
     <div class="container">
-        <h1>Give your support</h1>
-        <p class="tagline">
-            Content or action buttons for donations
+        <div class = "row">
+            <div class = "col-md-4">
+                <h1>Give your support</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-6">
+            <h2>Donate</h2>
+                Content here or button to lead people to donate.
 
-        </p>
-        
+            <h2>Mentor a Code for Progress student</h2>
+                Participants are each paired with a mentor who can help them navigate the professional workplace, expand their network, and lead a sustainable life in the social justice movement. Ideal mentors don’t need coding experience, will go through a short orientation with Code for Progress staff, and are available to participants during and after the training to provide support, guidance and encouragement for about an hour a week.
+
+ 
+            <h2>Code for Progress mentor profile</h2>
+                Mentors come in different shapes and sizes – and so do mentees. We expect that we’ll have a range of personalities and skills on our mentoring team, and hope to hear from anyone interested who:
+                <ul>
+                    <li>Is willing to be available for at least one hour per week for 6 months after the participant residency program</li>
+                    <li>Works in the social justice movement</li>
+                    <li>Has experience or identifies with a historically excluded community</li>
+                    <li>Understands the challenges associated with moving into an unfamiliar work environment or starting a new career</li>
+                    <li>Sees the value in developing technology for the social justice movement</li>
+                    <li>Can model and advise on maintaining a sustainable work life balance</li>
+                    <li>Is willing to use personal networks to help a mentee make connections and develop relationships</li>
+                    <li>Balances constructive criticism with encouragement</li>
+                </ul>
+
+        </div>
+    </div>
+</div>
+
         {% if messages %}
           {% for message in messages %}
                 <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">
@@ -17,6 +45,4 @@
           {% endfor %}
         {% endif %}
 
-    </div>
-</div>
 {% endblock %}
