@@ -16,6 +16,10 @@ a {
     color: #fff;
 }
 
+.presslink{
+    color:#aebe37;
+}
+
 a:hover,
 a:focus {
     color: #686868;
@@ -197,4 +201,10 @@ footer a:focus {
     position: relative;
     top: 0;
     bottom: 0;
+}
+
+.content {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
 }
