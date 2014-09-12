@@ -28,6 +28,7 @@ a:focus {
 .btn {
   border-radius: 3px;
   background-color: #aebe37;
+  margin: 2%;
 }
 
 .btn-primary {
@@ -39,6 +40,21 @@ a:focus {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #686868;
+  border-color: #686868;
+}
+
+.btn-nav {
+  background-color: #aebe37;
+  border-color: #aebe37;
+  margin: 2px;
+}
+
+.btn-nav:hover,
+.btn-nav:focus,
+.btn-nav:active,
+.btn-nav.active,
 .open > .dropdown-toggle.btn-primary {
   background-color: #686868;
   border-color: #686868;
