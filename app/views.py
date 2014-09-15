@@ -3,6 +3,9 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect, HttpResponse
 from django.utils.decorators import method_decorator
 from django.core.urlresolvers import reverse
+from django.views.generic.base import TemplateView
+from app.models import Contact
+from app.forms import ContactForm
 
 def index(request):
 	return render(request, "index.html")
@@ -25,5 +28,26 @@ def press(request):
 def fellows(request):
     return render(request, "fellows.html")
 
-def contact(request):
-    return render(request, "contact.html")
+class ContactUsView(TemplateView):
+    def get(self, request, **kwargs):
+        form = ContactForm()
+        template = "contact.html"
+        return render (request, template, {'form':form})
+
+    def post(self, request, **kwargs):
+        if request.method == "POST":
+            form = ContactForm(request.POST)
+            if form.is_valid():
+                first_name = form.cleaned_data.get("first_name")
+                last_name = form.cleaned_data.get("last_name")
+                email = form.cleaned_data.get("email")
+                interested_in = form.cleaned_data.get("interested_in")
+                notes = form.cleaned_data.get("notes")
+                if first_name and last_name and email and interested_in:
+                    contact = Contact(first_name = first_name, last_name = last_name, email = email, interested_in = interested_in)
+                    contact.save()
+                return render(request, 'contact.html', {'form': form})
+
+            else: 
+                form = ContactForm()
+                return render_to_response(request, 'contact.html', {'form' : form})

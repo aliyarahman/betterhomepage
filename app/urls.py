@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from app import views
-
+from app.views import ContactUsView
 
 urlpatterns = patterns('',
     url(r'^$', views.index, name='index'),
@@ -11,6 +11,6 @@ urlpatterns = patterns('',
     url(r'^partner/$', views.partner, name='partner'),
     url(r'^press/$', views.press, name='press'),
     url(r'^fellows/$', views.fellows, name='fellows'),
-    url(r'^contact/$', views.contact, name='contact'),
+    url(r'^contact/$', ContactUsView.as_view(), name='contact'),
     
 )

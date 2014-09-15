@@ -1,15 +1,15 @@
 #Section 1: import
 from django import forms
-from app.models import Contact
+from app.models import Contact, Options
 from django.forms import ModelForm
 from django.forms.models import modelformset_factory
 
 
 
-CONTACT_CHOICES =   (('application', _('receive the 2015 application when it is released.')),
-                     ('coach', _('be a coding or professional development coach for new coders or fellows.')),
-                     ('instructor', _('teach as a guest instructor.')),
-                     ('mentor', _('be a year-long professional mentor.')),)
+CONTACT_CHOICES =   (('application', ('receive the 2015 application when it is released.')),
+                     ('coach', ('be a coding or professional development coach for new coders or fellows.')),
+                     ('instructor', ('teach as a guest instructor.')),
+                     ('mentor', ('be a year-long professional mentor.')),)
 
 
 
