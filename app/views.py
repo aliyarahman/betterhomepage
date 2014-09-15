@@ -24,3 +24,6 @@ def press(request):
 
 def fellows(request):
     return render(request, "fellows.html")
+
+def contact(request):
+    return render(request, "contact.html")

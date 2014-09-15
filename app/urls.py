@@ -11,5 +11,6 @@ urlpatterns = patterns('',
     url(r'^partner/$', views.partner, name='partner'),
     url(r'^press/$', views.press, name='press'),
     url(r'^fellows/$', views.fellows, name='fellows'),
+    url(r'^contact/$', views.contact, name='contact'),
     
 )

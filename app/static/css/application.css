@@ -28,6 +28,7 @@ a:focus {
 .btn {
   border-radius: 3px;
   background-color: #aebe37;
+  margin: 2%;
 }
 
 .btn-primary {
@@ -40,8 +41,23 @@ a:focus {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
+  background-color: #686868;
+  border-color: #686868;
+}
+
+.btn-nav {
   background-color: #aebe37;
   border-color: #aebe37;
+  margin: 2px;
+}
+
+.btn-nav:hover,
+.btn-nav:focus,
+.btn-nav:active,
+.btn-nav.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #686868;
+  border-color: #686868;
 }
 
 /* Navigation & Brand */
@@ -102,7 +118,7 @@ footer a:focus {
 .jumbotron .tagline {
     position: relative;
     margin-top: 40px;
-    text-shadow: 4px 4px 8px #696969;
+    text-shadow: 2px 2px 6px #696969;
 }
 .jumbotron input.form-control {
     font-size: 18px;
@@ -158,7 +174,7 @@ footer a:focus {
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .jumbotron-press {
@@ -167,7 +183,7 @@ footer a:focus {
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .jumbotron-apply {
@@ -176,7 +192,7 @@ footer a:focus {
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .jumbotron-donate {
@@ -185,7 +201,7 @@ footer a:focus {
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
 .jumbotron-partner {
@@ -194,9 +210,17 @@ footer a:focus {
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 
+.jumbotron-contact {
+    background-color: #444;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: left;
+}
 .logo {
     position: relative;
     top: 0;
