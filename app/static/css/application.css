@@ -84,7 +84,7 @@ footer a:focus {
 
 .jumbotron {
     background-color: #444;
-    background-image: url('../img/grad_banner.png');
+    background-image: url('../img/graduation_banner2.png');
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
@@ -207,4 +207,11 @@ footer a:focus {
     margin-top: 5%;
     margin-bottom: 5%;
 
+}
+
+.landing .landing--form {
+    background: transparent;
+    zoom: 1;
+    margin: 0 30px 0 30px;
+    padding: 20px 0;
 }
