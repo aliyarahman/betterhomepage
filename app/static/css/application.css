@@ -216,3 +216,7 @@ footer a:focus {
     margin-bottom: 5%;
 
 }
+
+form #id_interested_in li {list-style: none;}
+
+form ul#id_interested_in {padding-left: 0px;}
