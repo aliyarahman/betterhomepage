@@ -46,8 +46,12 @@ class ContactUsView(TemplateView):
                 if first_name and last_name and email and interested_in:
                     contact = Contact(first_name = first_name, last_name = last_name, email = email, interested_in = interested_in)
                     contact.save()
-                return render(request, 'contact.html', {'form': form})
+                return render(request, 'thankyou.html', {'form': form})
 
             else: 
                 form = ContactForm()
-                return render_to_response(request, 'contact.html', {'form' : form})
+                return render(request, 'contact.html', {'form' : form})
+
+
+def thank_you(request):
+    return render(request, "thankyou.html")
