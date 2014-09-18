@@ -88,12 +88,12 @@ a:focus {
 /* Footer */
 
 footer a {
-    color: #fff;
+    color: #aebe37;
 }
 
 footer a:hover,
 footer a:focus {
-    color: #fff;
+    color: #aebe37;
 }
 
 /* Jumbotron */
@@ -113,12 +113,15 @@ footer a:focus {
     text-transform: uppercase;
     letter-spacing: -1px;
     text-shadow: 4px 4px 8px #696969;
+    color: white;
 
 }
 .jumbotron .tagline {
     position: relative;
     margin-top: 40px;
     text-shadow: 2px 2px 6px #696969;
+    color: #fff;
+    font-size: 2em;
 }
 .jumbotron input.form-control {
     font-size: 18px;
@@ -160,12 +163,19 @@ footer a:focus {
 
 .change {
     position: relative;
-    top: -320px;
+    top: ;
 }
 
 #tag {
     position: relative;
-    top: 5px;
+    top: ;
+}
+
+.facetag {
+    background: transparent;
+    margin: 0 30px 0 30px;
+    padding: 20px 0;
+
 }
 
 .jumbotron-about {
@@ -221,6 +231,16 @@ footer a:focus {
     color: #fff;
     text-align: left;
 }
+
+.jumbotron-fellows {
+    background-color: #444;
+    background-image: ;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-align: left;
+}
+
 .logo {
     position: relative;
     top: 0;

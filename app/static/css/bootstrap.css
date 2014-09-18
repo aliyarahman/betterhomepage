@@ -4544,15 +4544,17 @@ a.list-group-item.active > .badge,
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
-.jumbotron {
+/*!.jumbotron {
   padding: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  color: ;
+  background-color: #444;
 }
+
+
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: white;
 }
 .jumbotron p {
   margin-bottom: 15px;
@@ -4568,6 +4570,7 @@ a.list-group-item.active > .badge,
 .jumbotron .container {
   max-width: 100%;
 }
+*/
 @media screen and (min-width: 768px) {
   .jumbotron {
     padding-top: 48px;
@@ -5023,7 +5026,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-footer {
   padding: 30px 25px;
-  background-color: #444;
+  background-color: #aebe37;
   border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
