@@ -1,6 +1,6 @@
 #Section 1: import
 from django import forms
-from app.models import Contact, Options
+from app.models import Contact
 from django.forms import ModelForm
 from django.forms.models import modelformset_factory
 
