@@ -259,3 +259,28 @@ footer a:focus {
     margin: 0 30px 0 30px;
     padding: 20px 0;
 }
+
+
+.name {
+    position: inherit;
+    text-align: center;
+    color: #aebe37;
+    font-family: Courier;
+    font-size: 26px;
+    font-weight: inherit;
+}
+
+.position {
+    position: inherit;
+    text-align: center;
+    color: black;
+    font-family: Courier;
+    font-size: 24px;
+    font-weight: inherit;
+}
+
+.fellows-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
