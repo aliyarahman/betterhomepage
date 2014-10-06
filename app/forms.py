@@ -14,9 +14,9 @@ CONTACT_CHOICES =   (('application', ('receive the 2015 application when it is r
 
 
 class ContactForm(forms.Form):
-    first_name = forms.CharField(max_length=45)
-    last_name = forms.CharField(max_length=45)
-    email = forms.CharField(max_length=45)  
+    first_name = forms.CharField(max_length=45, required = True)
+    last_name = forms.CharField(max_length=45, required = True)
+    email = forms.CharField(max_length=45, required = True)
     interested_in = forms.MultipleChoiceField(
                             choices = CONTACT_CHOICES,
                             widget=forms.CheckboxSelectMultiple(),

@@ -52,9 +52,9 @@ class ContactUsView(TemplateView):
                 if first_name and last_name and email and interested_in:
                     contact = Contact(first_name = first_name, last_name = last_name, email = email, interested_in = interested_in)
                     contact.save()
-                # return render (request, 'thankyou.html', {'form': form})
+                    return render (request, 'thankyou.html', {'form': form})
 
-                from email_texts import english_version_emails as emails
+                '''from email_texts import english_version_emails as emails
 
                 # Grab admin email list (if not already grabbed or stored somewhere else)
                 admin_email_list = [admin_email_address]
@@ -76,14 +76,5 @@ class ContactUsView(TemplateView):
                     send_mass_mail((admin_email, confirmation_email), fail_silently=False)
                 except:
                     pass
-                #end of code for confirmation e-mail
-                
-                
-                # Still need to check for saving of skills they have here
-                return HttpResponseRedirect(reverse('thank_you'))
-
-            else: 
-                form = ContactForm()
-                return render(request, 'contact.html', {'form' : form})
-
-
+                #end of code for confirmation e-mail'''
+            return render(request, 'contact.html', {'form' : form})
