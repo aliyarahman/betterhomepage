@@ -6,7 +6,7 @@ from django.core.urlresolvers import reverse
 from django.views.generic.base import TemplateView
 from django.core.mail import send_mass_mail
 from email_texts import admin_email_address
-from app.models import Contact
+from app.models import *
 from app.forms import ContactForm
 
 def index(request):
@@ -28,7 +28,8 @@ def press(request):
     return render(request, "press.html")
 
 def fellows(request):
-    return render(request, "fellows.html")
+    fellows = Fellow.objects.order_by('first_name').all()
+    return render(request, "fellows.html", {'fellows':fellows})
 
 def thank_you(request):
     return render(request, "thankyou.html")
