@@ -1,4 +1,4 @@
 *.pyc
 venv
 *.csv
-betterhomepage/settings.py
+betterhomepage/settings_hidden.py

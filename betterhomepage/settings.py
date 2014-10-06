@@ -1,3 +1,4 @@
+from settings_hidden.py import *
 """
 Django settings for betterhomepage project.
 
@@ -17,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'r=odu(5fe5*^&t4vh$r$wwc@^#^x!)z8kg4p)ladtiq+#qoh2z'
+SECRET_KEY = hidden_secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -60,8 +61,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'cfp_website',
-        'USER': 'aliya',
-        'PASSWORD': 'Popcorn13',
+        'USER': hidden_db_user,
+        'PASSWORD': hidden_db_password,
         'HOST': '127.0.0.1',
         'PORT': '5432',
 
@@ -86,3 +87,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'info@codeforprogress.org'
+EMAIL_HOST_PASSWORD = hidden_email_password
