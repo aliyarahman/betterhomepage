@@ -26,6 +26,9 @@ def partner(request):
 def press(request):
     return render(request, "press.html")
 
+def cohort(request):
+    return render(request, "cohort.html")
+
 def fellows(request):
     fellows = Fellow.objects.order_by('first_name').all()
     return render(request, "fellows.html", {'fellows':fellows})

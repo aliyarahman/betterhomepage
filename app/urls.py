@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     url(r'^partner/$', views.partner, name='partner'),
     url(r'^press/$', views.press, name='press'),
     url(r'^fellows/$', views.fellows, name='fellows'),
+    url(r'^cohort/$', views.cohort, name='cohort'),
     url(r'^contact/$', ContactUsView.as_view(), name='contact'),
     url(r'^thank_you/$', views.thank_you, name='thank_you'),  
 )
