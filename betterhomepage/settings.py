@@ -1,4 +1,4 @@
-from settings_hidden.py import *
+from settings_hidden import *
 """
 Django settings for betterhomepage project.
 
