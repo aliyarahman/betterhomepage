@@ -4,8 +4,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.utils.decorators import method_decorator
 from django.core.urlresolvers import reverse
 from django.views.generic.base import TemplateView
-from django.core.mail import send_mass_mail
-from email_texts import admin_email_address
+from django.core.mail import send_mail
 from app.models import *
 from app.forms import ContactForm
 
@@ -43,6 +42,7 @@ class ContactUsView(TemplateView):
     def post(self, request, **kwargs):
         if request.method == "POST":
             form = ContactForm(request.POST)
+
             if form.is_valid():
                 first_name = form.cleaned_data.get("first_name")
                 last_name = form.cleaned_data.get("last_name")
@@ -52,12 +52,12 @@ class ContactUsView(TemplateView):
                 if first_name and last_name and email and interested_in:
                     contact = Contact(first_name = first_name, last_name = last_name, email = email, interested_in = interested_in)
                     contact.save()
+                    send_mail('Thanks for contacting Code for Progress', "Thanks for getting involved with Code for Progress! We'll contact you shortly!", 'Code for Progress', [email], fail_silently=False)
                     return render (request, 'thankyou.html', {'form': form})
 
-                '''from email_texts import english_version_emails as emails
 
-                # Grab admin email list (if not already grabbed or stored somewhere else)
-                admin_email_list = [admin_email_address]
+
+                '''from email_texts import english_version_emails as emails
         
                 # Build confirmation email
                 email = emails['contact']['confirmation']
