@@ -11,7 +11,7 @@
 	<div class="item teaser-page-list">
 		<div class="container_16">
 			<aside class="grid_10">
-				<h1 class="page-title">Code for Progress Fellows</h1>
+				<h1 class="page-title">{{fellow.first_name}} {{fellow.last_name}}</h1>
 			</aside>
 			<div class="grid_6">
 				<div id="rootline">
@@ -23,12 +23,9 @@
 	
 	<div id="main" class="site-main container_16">
 		<div class="inner">
-		<div class="candidate-margins">
-			<h3>Apr 2014 - Apr 2015 Cohort</h3>
-			{% for fellow in fellows %}				 
+		<div class="candidate-margins">	 
 			<div>
 				<img width="200" height="200" src="{% static 'img/'%}{{fellow.first_name}}.png" class="attachment-candidate-thumb wp-post-image" alt='{{fellow.firstname}}' />
-				<div class="name">{{fellow.first_name}} {{fellow.last_name}}</div>					
 				<div class="position"> {{fellow.where_from}}</div>
 				<div><b>What's something you built during the residency that you're proud of?</b>: {{fellow.post_2014_residency_q1}} </div>
 
@@ -38,8 +35,6 @@
 
 				<div><b>What did you do post-residency to relax and recharge?</b>: {{fellow.post_2014_residency_q4}} </div>				
 			</div>
-			{% endfor %}
-	
 		
 		</div>
 	</div>

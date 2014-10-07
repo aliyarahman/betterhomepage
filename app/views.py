@@ -29,9 +29,9 @@ def press(request):
 def cohort(request):
     return render(request, "cohort.html")
 
-def fellows(request):
-    fellows = Fellow.objects.order_by('first_name').all()
-    return render(request, "fellows.html", {'fellows':fellows})
+def fellow(request, fellow_firstname):
+    fellow = Fellow.objects.filter(first_name=fellow_firstname).first()
+    return render(request, "fellow.html", {'fellow':fellow})
 
 def thank_you(request):
     return render(request, "thankyou.html")
