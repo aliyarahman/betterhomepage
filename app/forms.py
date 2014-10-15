@@ -10,8 +10,8 @@ CONTACT_CHOICES =   (('application', ('receive the 2015 application when it is r
                      ('coach', ('be a coding or professional development coach for new coders or fellows.')),
                      ('instructor', ('teach as a guest instructor.')),
                      ('mentor', ('be a year-long professional mentor.')),
-                     ('other', ('other')),)
-
+                     ('email_list', ('join the email list and receive updates on Code For Progress opportunities.')),
+                     ('other', ('contact Code for Progress for another matter.')))
 
 
 class ContactForm(forms.Form):
