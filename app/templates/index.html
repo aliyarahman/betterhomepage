@@ -2,11 +2,11 @@
 {% block container %}
 
 <div class="jumbotron">
-    <div class="container">
-      <div class="change">   
-        <h1><span>Change the face of tech.</span></h1>
-        <h3><span>By fostering a new wave of social justice-minded coders.</span></h3>
-        </div>
+    <div class="change">   
+        <h1><span>Change the face of tech</span></h1>
+        <h3><span>By fostering a new wave of social justice-minded coders</span></h3>
+    </div>
+</div>
         {% if messages %}
           {% for message in messages %}
                 <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">
@@ -14,10 +14,6 @@
                 </div>
           {% endfor %}
         {% endif %}
-
-    </div>
-</div>
-
 <div class=''>
 <main class="container">
     <div class="row">
@@ -26,7 +22,7 @@
                 <p> I want to be a 2015 Fellow. 
             </div>
             <div class="col-md-4">
-                    <p><a class="btn btn-primary btn-lg" href="{% url 'donate' %}" role="button">Individual Supporters »</a></p>
+                    <p><a class="btn btn-primary btn-lg" href="{% url 'community' %}" role="button">Individual Supporters »</a></p>
                     <p> I'm an individual who wants to give time or donate to the Code for Progress community.</p>
             </div>
         <div class="col-md-4">

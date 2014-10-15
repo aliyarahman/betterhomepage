@@ -107,23 +107,13 @@ footer a:focus {
 
 .jumbotron {
     background-color: #444;
-    background-image: url('../img/graduation_banner2.png');
+    background-image: url('../img/grad_banner.jpg');
     background-repeat: no-repeat;
+    background-size: 115%;
     background-position: center;
-    color: #fff;
     text-align: center;
     
 }
-
-/*.jumbotron h1 {*/
-    margin-top: 300px;
-    font-size: 4em;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    text-shadow: 4px 4px 8px #696969;
-    color: white;
-
-/*}*/
 
 .jumbotron .tagline {
     position: relative;
@@ -172,12 +162,13 @@ footer a:focus {
 
 .change { 
    position: relative; 
-   width: 100%; /* for IE 6 */
+   width: 100%;  /* for IE 6 */
+   background: grey;
+   opacity: 0.82;
 }
 
 h1 { 
    margin-top: 400px; 
-   text-transform: uppercase;
    letter-spacing: -1px;
    text-shadow: 4px 4px 8px #696969;
    color: white;
@@ -185,17 +176,13 @@ h1 {
 
 h1 span { 
    color: white; 
+   text-transform: uppercase;
    font: bold, Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: grey;
-   opacity: 0.8; 
-   padding: 10px;
+   letter-spacing: -1px;
 }
 
 h3 {
   position: relative;
-  margin-top: 30px;
   text-shadow: 2px 2px 6px #696969;
   color: #fff;
   font-size: 2em;
@@ -204,14 +191,7 @@ h3 {
 h3 span { 
    color: white; 
    font: bold, Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: grey;
-   opacity: 0.8; 
-   padding: 10px;
-   padding-left: 42px;
-   margin-bottom: -20px;
-   
+   letter-spacing: -1px;
 }
 
 .facetag {

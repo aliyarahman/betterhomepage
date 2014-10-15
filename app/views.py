@@ -20,6 +20,9 @@ def apply(request):
 def donate(request):
     return render(request, "donate.html")
 
+def community(request):
+    return render(request, "community.html")
+
 def partner(request):
     return render(request, "partner.html")
 
