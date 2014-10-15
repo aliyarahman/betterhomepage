@@ -374,17 +374,13 @@ h3 span {
   margin-right: -360px;
 }
 
-<<<<<<< HEAD
+
 .cfp {
   background-color: #8fa227;
 }
-form #id_interested_in li {list-style: none;}
-=======
 
 form #id_interested_in li { list-style: none;
                             padding-bottom: 7px;}
-
->>>>>>> d5ae8b3b9f48ff00684a9305ba2bbad879bdcf7d
-
+                            
 form ul#id_interested_in {padding-left: 0px;}
 
