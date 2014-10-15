@@ -310,7 +310,8 @@ p span {
     margin-right: auto;
 }
 
-form #id_interested_in li {list-style: none;}
+form #id_interested_in li {list-style: none;
+                            padding-bottom: 7px;}
 
 form ul#id_interested_in {padding-left: 0px;}
 
