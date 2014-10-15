@@ -34,12 +34,14 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="{% url 'apply' %}">Apply</a></li>
-            <li><a href="{% url 'donate' %}">Contribute</a></li>
-            <li><a href="{% url 'partner' %}">Partner</a></li>
  	          <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'cohort' %}">Fellows</a></li>
             <li><a href="{% url 'press' %}">Press</a></li>
+          </ul>
+
+          <ul class = 'nav navbar-nav navbar-right'>
+            <li><a class="btn-nav" href="{% url 'contact' %}" role="button"> Contact Us</a></li>
+            <li><a class="btn-nav" href="{% url 'donate' %}" role="button"> Donate</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
