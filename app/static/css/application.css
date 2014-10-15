@@ -26,9 +26,9 @@ a:focus {
 }
 
 .btn {
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #aebe37;
-  margin: 2%;
+  margin: 5%;
 }
 
 .btn-primary {
@@ -139,7 +139,7 @@ footer a:focus {
     border-radius: 0;
 }
 .jumbotron .btn {
-    padding: 20px 20px;
+    padding: 40px 20px;
     z-index: 1;
     border-radius: 0;
     margin: 0;
@@ -169,7 +169,7 @@ footer a:focus {
 }
 
 h1 { 
-   margin-top: 300px; 
+   margin-top: 400px; 
    text-transform: uppercase;
    letter-spacing: -1px;
    text-shadow: 4px 4px 8px #696969;
@@ -186,7 +186,15 @@ h1 span {
    padding: 10px;
 }
 
-p span { 
+h3 {
+  position: relative;
+  margin-top: 30px;
+  text-shadow: 2px 2px 6px #696969;
+  color: #fff;
+  font-size: 2em;
+}
+
+h3 span { 
    color: white; 
    font: bold, Helvetica, Sans-Serif; 
    letter-spacing: -1px;  
@@ -194,6 +202,9 @@ p span {
    background: grey;
    opacity: 0.8; 
    padding: 10px;
+   padding-left: 42px;
+   margin-bottom: -20px;
+   
 }
 
 .facetag {
@@ -310,8 +321,25 @@ p span {
     margin-right: auto;
 }
 
-form #id_interested_in li {list-style: none;
+
+.site-info{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding:50px;
+}
+
+.adr{
+  background-color: #a0b52c;
+  color: white;
+  font-family: inherit;
+}
+
+
+form #id_interested_in li { list-style: none;
                             padding-bottom: 7px;}
+
 
 form ul#id_interested_in {padding-left: 0px;}
 
