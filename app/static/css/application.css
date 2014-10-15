@@ -1,5 +1,10 @@
 /* Bootstrap Overrides */
 
+html, body { 
+  margin: 0; 
+  padding: 0; 
+}
+
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -29,11 +34,13 @@ a:focus {
   border-radius: 5px;
   background-color: #aebe37;
   margin: 5%;
+  font-style: bold;
 }
 
 .btn-primary {
-  background-color: #aebe37;
-  border-color: #aebe37;
+  background-color: #686868;
+  border-color: #686868;
+  padding: -20px;
 }
 
 .btn-primary:hover,
@@ -41,8 +48,8 @@ a:focus {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: #686868;
-  border-color: #686868;
+  background-color: #101141;
+  border-color: #101141;
 }
 
 .btn-nav {
@@ -221,6 +228,8 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-press {
@@ -230,6 +239,8 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-apply {
@@ -239,6 +250,8 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-donate {
@@ -248,6 +261,8 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-partner {
@@ -257,6 +272,8 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-contact {
@@ -266,6 +283,8 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-fellows {
@@ -275,6 +294,8 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .logo {
@@ -315,6 +336,18 @@ h3 span {
     font-weight: inherit;
 }
 
+.fellows-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fellows-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .fellows-3 {
     display: block;
     margin-left: auto;
@@ -324,18 +357,25 @@ h3 span {
 .site-info{
   background-color: black;
   color: white;
-  text-align: center;
   font-size: 15px;
-  padding:50px;
+  font-family: "Lucida Console";
+  padding:5px;
+  padding-left: 360px;
 }
 
 .adr{
   background-color: #a0b52c;
   color: white;
-  font-family: inherit;
+  font-family: "Lucida Console";
+  padding: 5px;
+  padding-left: 360px;
+  margin-left: -360px;
+  margin-right: -360px;
 }
 
-
+.cfp {
+  background-color: #8fa227;
+}
 form #id_interested_in li {list-style: none;}
 
 form ul#id_interested_in {padding-left: 0px;}
