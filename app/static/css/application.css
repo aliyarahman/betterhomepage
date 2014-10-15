@@ -318,22 +318,23 @@ h3 span {
 
 .fellows-1 {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -80px;
+    margin-right: -80px;
+
 }
 
 .fellows-2 {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 50px;
 }
 
 .fellows-3 {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -80px;
+    margin-right: -80px;
 }
-
 
 .site-info{
   background-color: black;
@@ -361,6 +362,6 @@ h3 span {
 
 form #id_interested_in li { list-style: none;
                             padding-bottom: 7px;}
-                            
+
 form ul#id_interested_in {padding-left: 0px;}
 
