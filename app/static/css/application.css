@@ -165,8 +165,9 @@ footer a:focus {
    width: 100%;  /* for IE 6 */
    background: grey;
    opacity: 0.82;
-}
+   margin: 0;
 
+}
 h1 { 
    margin-top: 400px; 
    letter-spacing: -1px;
@@ -287,6 +288,7 @@ h3 span {
 .content {
     margin-top: 5%;
     margin-bottom: 5%;
+    margin-right: 2%;
 
 }
 
