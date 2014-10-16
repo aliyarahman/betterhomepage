@@ -1,9 +1,5 @@
 /* Bootstrap Overrides */
 
-html, body { 
-  margin: 0; 
-  padding: 0; 
-}
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -162,7 +158,7 @@ footer a:focus {
 
 .change { 
    position: relative; 
-   width: 100%;  /* for IE 6 */
+   max-width: 120%;  /* for IE 6 */
    background: grey;
    opacity: 0.82;
 }
@@ -297,6 +293,9 @@ h3 span {
     padding: 20px 0;
 }
 
+.candidate-margins {
+  padding-left: 40px;
+}
 
 .name {
     position: inherit;
@@ -304,7 +303,8 @@ h3 span {
     color: #aebe37;
     font-family: Courier;
     font-size: 26px;
-    font-weight: inherit;
+    font-weight: bold;
+    padding-right: 20px;
 }
 
 .position {
@@ -314,6 +314,7 @@ h3 span {
     font-family: Courier;
     font-size: 24px;
     font-weight: inherit;
+    padding-right: 50px;
 }
 
 .fellows-1 {
