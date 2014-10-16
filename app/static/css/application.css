@@ -1,5 +1,10 @@
 /* Bootstrap Overrides */
 
+html, body { 
+  margin: 0; 
+  padding: 0; 
+}
+
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -26,14 +31,16 @@ a:focus {
 }
 
 .btn {
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #aebe37;
-  margin: 2%;
+  margin: 5%;
+  font-style: bold;
 }
 
 .btn-primary {
-  background-color: #aebe37;
-  border-color: #aebe37;
+  background-color: #686868;
+  border-color: #686868;
+  padding: -20px;
 }
 
 .btn-primary:hover,
@@ -41,8 +48,8 @@ a:focus {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  background-color: #686868;
-  border-color: #686868;
+  background-color: #101141;
+  border-color: #101141;
 }
 
 .btn-nav {
@@ -100,23 +107,13 @@ footer a:focus {
 
 .jumbotron {
     background-color: #444;
-    background-image: url('../img/graduation_banner2.png');
+    background-image: url('../img/grad_banner.jpg');
     background-repeat: no-repeat;
+    background-size: 115%;
     background-position: center;
-    color: #fff;
     text-align: center;
     
 }
-
-/*.jumbotron h1 {*/
-    margin-top: 300px;
-    font-size: 4em;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    text-shadow: 4px 4px 8px #696969;
-    color: white;
-
-/*}*/
 
 .jumbotron .tagline {
     position: relative;
@@ -139,7 +136,7 @@ footer a:focus {
     border-radius: 0;
 }
 .jumbotron .btn {
-    padding: 20px 20px;
+    padding: 40px 20px;
     z-index: 1;
     border-radius: 0;
     margin: 0;
@@ -165,12 +162,13 @@ footer a:focus {
 
 .change { 
    position: relative; 
-   width: 100%; /* for IE 6 */
+   width: 100%;  /* for IE 6 */
+   background: grey;
+   opacity: 0.82;
 }
 
 h1 { 
-   margin-top: 300px; 
-   text-transform: uppercase;
+   margin-top: 400px; 
    letter-spacing: -1px;
    text-shadow: 4px 4px 8px #696969;
    color: white;
@@ -178,22 +176,22 @@ h1 {
 
 h1 span { 
    color: white; 
+   text-transform: uppercase;
    font: bold, Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: grey;
-   opacity: 0.8; 
-   padding: 10px;
+   letter-spacing: -1px;
 }
 
-p span { 
+h3 {
+  position: relative;
+  text-shadow: 2px 2px 6px #696969;
+  color: #fff;
+  font-size: 2em;
+}
+
+h3 span { 
    color: white; 
    font: bold, Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: grey;
-   opacity: 0.8; 
-   padding: 10px;
+   letter-spacing: -1px;
 }
 
 .facetag {
@@ -210,6 +208,8 @@ p span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-press {
@@ -219,6 +219,8 @@ p span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-apply {
@@ -228,6 +230,8 @@ p span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-donate {
@@ -237,6 +241,8 @@ p span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-partner {
@@ -246,6 +252,8 @@ p span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-contact {
@@ -255,6 +263,8 @@ p span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .jumbotron-fellows {
@@ -264,6 +274,8 @@ p span {
     background-position: center;
     color: #fff;
     text-align: left;
+    margin-top: -400px;
+    padding-top: 10px;
 }
 
 .logo {
@@ -304,13 +316,52 @@ p span {
     font-weight: inherit;
 }
 
-.fellows-3 {
+.fellows-1 {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -80px;
+    margin-right: -80px;
+
 }
 
-form #id_interested_in li {list-style: none;}
+.fellows-2 {
+    display: block;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 50px;
+}
+
+.fellows-3 {
+    display: block;
+    margin-left: -80px;
+    margin-right: -80px;
+}
+
+.site-info{
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: "Lucida Console";
+  padding:5px;
+  padding-left: 360px;
+}
+
+.adr{
+  background-color: #a0b52c;
+  color: white;
+  font-family: "Lucida Console";
+  padding: 5px;
+  padding-left: 360px;
+  margin-left: -360px;
+  margin-right: -360px;
+}
+
+
+.cfp {
+  background-color: #8fa227;
+}
+
+form #id_interested_in li { list-style: none;
+                            padding-bottom: 7px;}
 
 form ul#id_interested_in {padding-left: 0px;}
 

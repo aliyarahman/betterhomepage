@@ -20,6 +20,9 @@ def apply(request):
 def donate(request):
     return render(request, "donate.html")
 
+def community(request):
+    return render(request, "community.html")
+
 def partner(request):
     return render(request, "partner.html")
 
@@ -27,7 +30,8 @@ def press(request):
     return render(request, "press.html")
 
 def cohort(request):
-    return render(request, "cohort.html")
+    fellows = Fellow.objects.all()
+    return render(request, "cohort.html", {'fellows':fellows})
 
 def fellow(request, fellow_firstname):
     fellow = Fellow.objects.filter(first_name=fellow_firstname).first()

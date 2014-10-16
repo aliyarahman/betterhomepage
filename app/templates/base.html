@@ -34,12 +34,14 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="{% url 'apply' %}">Apply</a></li>
-            <li><a href="{% url 'donate' %}">Contribute</a></li>
-            <li><a href="{% url 'partner' %}">Partner</a></li>
  	          <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'cohort' %}">Fellows</a></li>
             <li><a href="{% url 'press' %}">Press</a></li>
+          </ul>
+
+          <ul class = 'nav navbar-nav navbar-right'>
+            <li><a class="btn-nav" href="{% url 'contact' %}" role="button"> Contact Us</a></li>
+            <li><a class="btn-nav" href="{% url 'donate' %}" role="button"> Donate</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -55,7 +57,8 @@
 	{% endblock %}
 	
 	{% block footer %}
-	<div class="panel-footer">
+  <div class="cfp">
+	<div class="blockquote footer">
     
   <!-- Footer -->
     <footer id="colophon" class="container" role="contentinfo">
@@ -67,37 +70,31 @@
               <!-- First Widget Area -->
               <div class="grid_4">
                     
-    <aside class="widget widget_adress">
-      
-            <aside id="wplook_address_widget-2" class="widget widget_wplook_address_widget">      <h3>code for progress_</h3>
+       <div class="cfp"><h3>code for progress_</h3></div>
+</div>
+</div>
 
+<div class="adr">
+  <div class="grid_8">
+    <p class="copy">
       <address class="vcard">
                 
-        <p class="adr">
-                      <b>Postal:</b>1220 L Street NW, Suite 100-513 Washington, DC, 20005<br>
-          
-
-          
-
-                      
-          
-        </p>
-                  <b>Phone:</b>(202) 817-2633<br>
+       <address> 
+                      <b>Postal:</b>1220 L Street NW, Suite 100-513 Washington, DC, 20005<br><br>
         
-                  <b>E-mail:</b>info@codeforprogress.org<br>
         
-              </address>
-    </aside>
-    
-                  </aside></div>
+                  <abbr title="phone">Phone:<abbr>(202) 817-2633<br><br>
+        
+                  <abbr title="email">E-mail:<abbr>info@codeforprogress.org
             
-            
-            
+    </div>  
             
             <div class="clear"></div>
           </div>
         
       </div>
+    </div>
+  </div>
 
       <!-- Site Info -->
       <div class="site-info">
