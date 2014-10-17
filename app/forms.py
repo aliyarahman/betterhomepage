@@ -6,11 +6,11 @@ from django.forms.models import modelformset_factory
 
 
 
-CONTACT_CHOICES =   (('application', ('receive the 2015 application when it is released.')),
-                     ('coach', ('be a coding or professional development coach for new coders or fellows.')),
-                     ('instructor', ('teach as a guest instructor.')),
+CONTACT_CHOICES =   (('application', ('be notified when the 2015 application is available.')),
+                     ('coach', ('be a professional development or coding coach.')),
+                     ('instructor', ('be a guest instructor.')),
                      ('mentor', ('be a year-long professional mentor.')),
-                     ('email_list', ('join the email list and receive updates on Code For Progress opportunities.')),
+                     ('email_list', ('receive email updates.')),
                      ('other', ('contact Code for Progress for another matter.')))
 
 
