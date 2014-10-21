@@ -29,14 +29,15 @@ a:focus {
 .btn {
   border-radius: 5px;
   background-color: #aebe37;
-  margin: 5%;
+  margin-left: 20%;
   font-style: bold;
+  padding: 3%;
+  box-shadow: 2px 2px 4px #696969;
 }
 
 .btn-primary {
   background-color: #686868;
   border-color: #686868;
-  padding: -20px;
 }
 
 .btn-primary:hover,
@@ -53,7 +54,7 @@ a:focus {
   border-color: #686868;
   color: white;
   margin-top: -1%;
-  margin-left: -4%;
+  margin-left: -2%;
   float: right;
 }
 
@@ -88,8 +89,6 @@ a:focus {
     border-radius: 0;
     background-color: #aebe37;
     margin-bottom: 0;
-/*    font-weight: bold;*/
-   /* text-shadow: 1px 1px 1px #696969;*/
     font-size: 20px;
 }
 
@@ -220,6 +219,14 @@ h3 span {
    color: white; 
    font: bold, Helvetica, Sans-Serif; 
    letter-spacing: -1px;
+}
+
+.buttontagline {
+  margin-left: 20%;
+  padding-right: 10%;
+  margin-bottom: 8%;
+  margin-top: 5%;
+
 }
 
 .facetag {
