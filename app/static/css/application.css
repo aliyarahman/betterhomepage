@@ -51,11 +51,14 @@ a:focus {
 
 .btn-contact {
   background-color: #686868;
-  border-color: #686868;
   color: white;
   margin-top: -1%;
-  margin-left: -2%;
   float: right;
+  margin-left: 2%;
+  padding right: 15px;
+  padding left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .btn-contact:hover,
