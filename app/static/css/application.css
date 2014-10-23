@@ -41,6 +41,21 @@ a:focus {
   font-size: 25px;
 }
 
+.btn-2 {
+  border-radius: 5px;
+  background-color: #aebe37;
+  margin-left: 20%;
+  font-style: bold;
+  padding: 3%;
+  box-shadow: 2px 2px 4px #696969;
+}
+
+.btn-primary-2 {
+  background-color: #686868;
+  border-color: #686868;
+  font-size: 10px;
+}
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
@@ -327,7 +342,7 @@ h3 span {
 }
 
 .candidate-margins {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .name {
@@ -337,7 +352,7 @@ h3 span {
     font-family: Courier;
     font-size: 26px;
     font-weight: bold;
-    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .position {
@@ -345,29 +360,40 @@ h3 span {
     text-align: center;
     color: black;
     font-family: Courier;
-    font-size: 24px;
-    font-weight: inherit;
-    padding-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.position-2 {
+    position: inherit;
+    text-align: left;
+    color: black;
+    font-family: Courier;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .fellows-1 {
     display: block;
-    margin-left: -80px;
-    margin-right: -80px;
-
+    margin-left: -300px;
+    margin-right: -300px;
+    padding-left: 50px;
 }
 
 .fellows-2 {
     display: block;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -40px;
+    margin-right: -40px;
     padding-left: 50px;
 }
 
 .fellows-3 {
     display: block;
-    margin-left: -80px;
-    margin-right: -80px;
+    margin-left: -300px;
+    margin-right: -300px;
+    padding-left: 50px;
 }
 
 .site-info{
@@ -380,6 +406,7 @@ h3 span {
 }
 
 .adr{
+  position: inline;
   background-color: #a0b52c;
   color: white;
   font-family: "Lucida Console";
@@ -393,6 +420,28 @@ h3 span {
 .cfp {
   background-color: #8fa227;
 }
+
+.border {
+  border: 5px solid black;  
+  height: 350px;
+  width: 300px;
+  margin: 40px;
+  overflow: hidden;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.grow :hover{
+  width: 300px;
+  height: 300px;
+}
+
+.question {
+  font-family: "Palatino Linotype";
+  color: #101141;
+  font-size: 30px;
+}
+
 
 form #id_interested_in li { list-style: none;
                             padding-bottom: 7px;}

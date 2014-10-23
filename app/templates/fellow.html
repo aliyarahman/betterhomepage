@@ -5,35 +5,36 @@
 
 
 		<!-- #masthead .site-header -->
-	<div class="item teaser-page-list">
-		<div class="jumbotron-fellows">
+<div class="jumbotron-fellows">
     <div class="container">
-		 <div class = "col-md-3">
-				<h1 class="page-title">{{fellow.first_name}} {{fellow.last_name}}</h1>
-			</aside>
-			<div class="grid_6">
-				<div id="rootline">
-									</div>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-	
+          <div class = "col-md-3">
+                <h1 class="page-title"> 
+      <a class="btn-2 btn-primary-2 btn-sm" href="{% url 'cohort' %}" role="button">
+  <span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+      {{fellow.first_name}} {{fellow.last_name}}</h1>
+            </div>  
+
+        </div>
+    </div>
+				
+
+	<div class = "container">
 	<div id="main" class="site-main container_16">
 		<div class="inner">
 		<div class="candidate-margins">	 
 			<div>
-				<img width="200" height="200" src="{% static 'img/'%}{{fellow.first_name}}.png" class="attachment-candidate-thumb wp-post-image" alt='{{fellow.firstname}}' />
-				<div class="position"> {{fellow.where_from}}</div>
-				<div><b>What's something you built during the residency that you're proud of?</b>: {{fellow.post_2014_residency_q1}} </div>
+				<img width="300" height="300" src="{% static 'img/'%}{{fellow.first_name}}.png" class="attachment-candidate-thumb wp-post-image" alt='{{fellow.firstname}}' />
+				<div class="position-2"> {{fellow.where_from}}</div>
+				<div class="question"><b>What's something you built during the residency that you're proud of?</b>: {{fellow.post_2014_residency_q1}} </div><br>
 
-				<div><b>What's your favorite programming language?</b>: {{fellow.post_2014_residency_q2}} </div>
+				<div class="question"><b>What's your favorite programming language?</b>: {{fellow.post_2014_residency_q2}} </div><br>
 
-				<div><b>How has your vision for the role of tech in your community's life changed since April?</b>: {{fellow.post_2014_residency_q3}} </div>
+				<div class="question"><b>How has your vision for the role of tech in your community's life changed since April?</b>: {{fellow.post_2014_residency_q3}} </div><br>
 
-				<div><b>What did you do post-residency to relax and recharge?</b>: {{fellow.post_2014_residency_q4}} </div>				
+				<div class="question"><b>What did you do post-residency to relax and recharge?</b>: {{fellow.post_2014_residency_q4}} </div><br>				
 			</div>
-		
+		</div>
 		</div>
 	</div>
 </div>				
