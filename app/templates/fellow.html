@@ -7,12 +7,13 @@
 		<!-- #masthead .site-header -->
 <div class="jumbotron-fellows">
     <div class="container">
-          <div class = "col-md-3">
-                <h1 class="page-title"> 
-      <a class="btn-2 btn-primary-2 btn-sm" href="{% url 'cohort' %}" role="button">
-  <span class="glyphicon glyphicon-chevron-left"></span>
-</a>
-      {{fellow.first_name}} {{fellow.last_name}}</h1>
+          <div class = "col-md-1">
+          	     <a class="btn-2 btn-primary-2 btn-sm" href="{% url 'cohort' %}" role="button">
+ 				 <span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+			</div>
+		<div class = "col-md-3">
+             <h1 class="page-title">{{fellow.first_name}} {{fellow.last_name}}</h1>
             </div>  
 
         </div>

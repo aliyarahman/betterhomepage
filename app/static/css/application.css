@@ -42,18 +42,14 @@ a:focus {
 }
 
 .btn-2 {
-  border-radius: 5px;
-  background-color: #aebe37;
   margin-left: 20%;
-  font-style: bold;
-  padding: 3%;
-  box-shadow: 2px 2px 4px #696969;
+  margin-right: 20%;
+  margin-bottom: -5px;
+  padding-bottom: -10px;
 }
 
 .btn-primary-2 {
-  background-color: #686868;
-  border-color: #686868;
-  font-size: 10px;
+  font-size: 25px;
 }
 
 .btn-primary:hover,
@@ -65,6 +61,14 @@ a:focus {
   border-color: #101141;
 }
 
+.glyphicon-chevron-left {
+  position: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  font-family: 'Glyphicons Halflings';
+  font-size: 30px;
+}
 .btn-contact {
   background-color: #686868;
   color: white;
