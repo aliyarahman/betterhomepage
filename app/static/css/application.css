@@ -38,6 +38,7 @@ a:focus {
 .btn-primary {
   background-color: #686868;
   border-color: #686868;
+  font-size: 25px;
 }
 
 .btn-primary:hover,
@@ -132,17 +133,10 @@ footer a:focus {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    background-size: 115%; 
-}
-jumbotron
-. .tagline {
-    position: relative;
-    margin-top: 40px;
-    text-shadow: 2px 2px 6px #696969;
-    color: #fff;
-    font-size: 2em;
-    margin: 0 auto;
-}
+    background-size: 115%;
+    height: 600px; 
+  }
+
 .jumbotron input.form-control {
     font-size: 18px;
     padding: 20px;
@@ -183,24 +177,26 @@ jumbotron
 
 .change { 
    position: relative; 
-   max-width: 120%;  /* for IE 6 */
+   max-width: 150%;  /* for IE 6 */
    background: grey;
    opacity: 0.82;
-
+   text-align: center;
+   margin-top: -9%;
+   margin-bottom: 3%;
 } 
 h1 { 
-   margin-top: 400px; 
    letter-spacing:-1px;
    text-shadow: 4px 4px 8px #696969;
    color: white;
 }
 
 .tagline { 
-   margin-top: 420px; 
+  margin-top: 1px;
    letter-spacing:-1px;
    text-shadow: 4px 4px 8px #696969;
    color: white;
    margin-bottom: -25px;
+   width: 100%;
 }
 
 h1 span { 
@@ -209,6 +205,7 @@ h1 span {
    font: Helvetica, Sans-Serif; 
    letter-spacing: -1px;
    margin-bottom: -25px;
+   font-size: 75px;
 }
 
 h3 {
@@ -246,7 +243,6 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
-    margin-top: -400px;
     padding-top: 10px;
 }
 
@@ -257,7 +253,6 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
-    margin-top: -400px;
     padding-top: 10px;
 }
 
@@ -268,7 +263,6 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
-    margin-top: -400px;
     padding-top: 10px;
 }
 
@@ -279,7 +273,6 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
-    margin-top: -400px;
     padding-top: 10px;
 }
 
@@ -290,7 +283,6 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
-    margin-top: -400px;
     padding-top: 10px;
 }
 
@@ -301,7 +293,6 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
-    margin-top: -400px;
     padding-top: 10px;
 }
 
@@ -312,7 +303,6 @@ h3 span {
     background-position: center;
     color: #fff;
     text-align: left;
-    margin-top: -400px;
     padding-top: 10px;
 }
 
