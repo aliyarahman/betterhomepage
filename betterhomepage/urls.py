@@ -5,5 +5,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^app/', include('app.urls')),
+    url(r'^apply/', include('fellowship_app.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
