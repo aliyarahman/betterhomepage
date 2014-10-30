@@ -148,13 +148,15 @@ footer a:focus {
 /* Jumbotron */
 
 .jumbotron {
-    background-color: #444;
+    background-color: #fff;
     background-image: url('../img/grad_banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
-    background-size: 115%;
     height: 600px; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 115%;
   }
 
 .jumbotron input.form-control {
