@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block container %}       
+
+{% load staticfiles %}
+
+
+
+    <div class="jumbotron-title">
+      <div class="container">
+          <div class = "col-md-3">
+                <h1>Staff & Fellows</h1>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container content">
+
+
+
+<h2>2014 Fellows</h2>
+
+    {% for fellow in fellows %}
+      <div class="row person_holder text-left" onClick='location.href="{% url 'fellow' 'dago' %}"'>
+          <div class="col-lg-3">
+            <img src="{% static 'img/'%}{{fellow.first_name}}.png" alt={{fellow.first_name}} />
+          </div>
+          
+          <div class="col-lg-6">
+            <h2 class="green_text">{{fellow.first_name}} {{fellow.last_name}}</h2>
+            <h4><span class="charcoal_text"><b>Originally from</b></span>: {{fellow.where_from}}</h4>
+            {% if fellow.current_job != "" %}<h4><span class="charcoal_text"><b>Currently works as</b></span>: {{fellow.current_job}}</h4>{% endif %}
+          </div>
+
+      </div>
+    {% endfor %}
+
+
+
+<br><br><h2>Staff</h2>
+
+      <div class="row person_holder text-left" onClick='location.href="{% url 'fellow' 'dago' %}"'>
+          <div class="col-lg-3">
+            <img src="{% static 'img/michelle_small_headshot.jpg' %}" alt="Dago" />
+          </div>
+          
+          <div class="col-lg-6">
+            <h2 class="green_text">Michelle Fox</h2>
+            <h4>Executive Director</h4>
+
+          </div>
+
+      </div>
+    
+      <div class="row person_holder center-block" onClick='location.href="{% url 'fellow' 'selina' %}"'>
+        
+          <div class="col-lg-3">
+            <img src="{% static 'img/aliya_small_headshot.jpg' %}" alt="Selina" />
+          </div>          
+          
+          <div class="col-lg-6">
+            <h2 class="green_text">Aliya Rahman</h2>
+            <h4>Program Director</h4>
+          </div>
+
+      </div>
+
+
+    </div>
+  
+</div>
+
+    
+{% endblock %}  

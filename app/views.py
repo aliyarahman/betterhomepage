@@ -8,7 +8,7 @@ from django.core.mail import send_mail
 from app.models import *
 from app.forms import ContactForm
 
-def index(request):
+def home(request):
 	return render(request, "index.html")
 
 def about(request):
@@ -29,9 +29,9 @@ def partner(request):
 def press(request):
     return render(request, "press.html")
 
-def cohort(request):
-    fellows = Fellow.objects.all()
-    return render(request, "cohort.html", {'fellows':fellows})
+def staff_fellows(request):
+    fellows = Fellow.objects.order_by('last_name')
+    return render(request, "staff_fellows.html", {'fellows':fellows})
 
 def fellow(request, fellow_firstname):
     fellow = Fellow.objects.filter(first_name=fellow_firstname).first()

@@ -3,8 +3,8 @@ from app import views
 from app.views import ContactUsView
 
 urlpatterns = patterns('',
-    url(r'^$', views.index, name='index'),
-    url(r'^index/$', views.index, name='index'),
+    url(r'^$', views.home, name='home'),
+    url(r'^home/$', views.home, name='home'),
     url(r'^about/$', views.about, name='about'),
     url(r'^apply/$', views.apply, name='apply'),
     url(r'^donate/$', views.donate, name='donate'),
@@ -12,7 +12,7 @@ urlpatterns = patterns('',
     url(r'^partner/$', views.partner, name='partner'),
     url(r'^press/$', views.press, name='press'),
     url(r'^fellow/(?P<fellow_firstname>.+)/$', views.fellow, name='fellow'),
-    url(r'^cohort/$', views.cohort, name='cohort'),
+    url(r'^staff_fellows/$', views.staff_fellows, name='staff_fellows'),
     url(r'^contact/$', ContactUsView.as_view(), name='contact'),
     url(r'^thank_you/$', views.thank_you, name='thank_you'),  
 )

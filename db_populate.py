@@ -5,7 +5,7 @@ import csv
 # Section 1: Open the CSV - direct download with no filename changes from the Google doc
 
 print "Getting data...\n"
-input_file = csv.DictReader(open("Fellows post residency quotes 9-14 - Sheet1.csv"))
+input_file = csv.DictReader(open("fellows.csv"))
 
 
 
@@ -18,5 +18,5 @@ for fellow in input_file:
     q4 = fellow["What did you do post-residency to relax/recover/have fun/etc?"]
     
     # Commit to the database
-    fellow = Fellow(first_name = fellow['first_name'], last_name=fellow['last_name'], where_from = fellow['where_from'], cohort = "2004 Spring", post_2014_residency_q1 = q1, post_2014_residency_q2 = q2, post_2014_residency_q3 = q3, post_2014_residency_q4 = q4)
+    fellow = Fellow(first_name = fellow['first_name'], last_name=fellow['last_name'], where_from = fellow['where_from'], cohort = "2004 Spring", current_job = fellow['current_job'],post_2014_residency_q1 = q1, post_2014_residency_q2 = q2, post_2014_residency_q3 = q3, post_2014_residency_q4 = q4, page_text=fellow['page_text'])
     fellow.save()
