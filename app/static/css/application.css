@@ -151,7 +151,7 @@ footer a:focus {
     background-color: #fff;
     background-image: url('../img/grad_banner.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     height: 30em;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -398,6 +398,7 @@ h3 span {
 
 .site-info{
   background-color: black;
+  opacity: 0.8;
   color: white;
   font-size: 1em;
   padding: 1em;
