@@ -134,18 +134,12 @@ footer a:focus {
 
 .jumbotron {
     background-color: #fff;
-/*    background-image: url('../img/grad_banner.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100%; */
   }
 
 .change {
+   vertical-align; top;
    height: 100%;
-   padding-left: 5em;
+   padding-left: 5%;
    max-width: 150%;  /* for IE 6 */
    background: black;
    opacity: 0.7;
@@ -179,14 +173,13 @@ footer a:focus {
     color: #fff;
 }
 
-
-h1 span { 
+.change h1 { 
    color: white; 
    font: Helvetica, Sans-Serif; 
    letter-spacing: -1px;
    margin-bottom: -25px;
-   font-size: 1em;
 }
+
 
 h3 {
   position: relative;
