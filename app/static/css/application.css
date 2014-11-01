@@ -152,11 +152,11 @@ footer a:focus {
     background-image: url('../img/grad_banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    height: 600px; 
+    height: 30em;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
-    background-size: 115%;
+    background-size: 100%;
   }
 
 .jumbotron input.form-control {
@@ -198,32 +198,25 @@ footer a:focus {
 }
 
 .change { 
-   position: relative; 
+   position: relative;
+   padding: 2em;
+   padding-left: 15%;
+   height: 30em;
    max-width: 150%;  /* for IE 6 */
-   background: grey;
-   opacity: 0.82;
-   text-align: center;
-   margin-top: -9%;
-   margin-bottom: 3%;
-} 
+   background: black;
+   opacity: 0.7;
+   text-align: left;
+}
+
+
 h1 { 
    letter-spacing:-1px;
-   text-shadow: 4px 4px 8px #696969;
    color: white;
 }
 
-.tagline { 
-  margin-top: 1px;
-   letter-spacing:-1px;
-   text-shadow: 4px 4px 8px #696969;
-   color: white;
-   margin-bottom: -25px;
-   width: 100%;
-}
 
 h1 span { 
    color: white; 
-   text-transform: uppercase;
    font: Helvetica, Sans-Serif; 
    letter-spacing: -1px;
    margin-bottom: -25px;
@@ -406,25 +399,15 @@ h3 span {
 .site-info{
   background-color: black;
   color: white;
-  font-size: 15px;
-  font-family: "Lucida Console";
-  padding:5px;
-  padding-left: 360px;
-}
+  font-size: 1em;
+  padding: 1em;
+  padding-left: 15%;
 
-.adr{
-  position: inline;
-  background-color: #a0b52c;
-  color: white;
-  font-family: "Lucida Console";
-  padding: 5px;
-  padding-left: 360px;
-  margin-left: -360px;
-  margin-right: -360px;
 }
 
 
 .cfp {
+  padding: 1% 15% 1% 15%;
   background-color: #8fa227;
 }
 
