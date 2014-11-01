@@ -8,11 +8,6 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #fff;
-    position: relative;
-}
-
 a {
     color: #fff;
 }
@@ -61,14 +56,6 @@ a:focus {
   border-color: #101141;
 }
 
-.glyphicon-chevron-left {
-  position: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 5px;
-  font-family: 'Glyphicons Halflings';
-  font-size: 30px;
-}
 
 .btn-contact {
   background-color: #686868;
@@ -121,10 +108,6 @@ a:focus {
     font-size: 20px;
 }
 
-.navbar-brand > .glyphicon {
-    top: 3px;
-}
-
 .nav .navbar-nav {
     color: #686868;
 }
@@ -147,17 +130,27 @@ footer a:focus {
 
 /* Jumbotron */
 
+.jumbotron img {width: 100%; position: absolute;}
+
 .jumbotron {
     background-color: #fff;
-    background-image: url('../img/grad_banner.jpg');
+/*    background-image: url('../img/grad_banner.jpg');
     background-repeat: no-repeat;
     background-position: top;
-    height: 30em;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
-    background-size: 100%;
+    background-size: 100%; */
   }
+
+.change {
+   height: 100%;
+   padding-left: 5em;
+   max-width: 150%;  /* for IE 6 */
+   background: black;
+   opacity: 0.7;
+   text-align: left;
+}
 
 .jumbotron input.form-control {
     font-size: 18px;
@@ -186,41 +179,13 @@ footer a:focus {
     color: #fff;
 }
 
-.result_card {
-    border-radius: 10%;
-    padding: 1.5em;
-    margin-bottom: 1em;
-    background-color: #3adcbc;
-}
-
-#map-canvas { 
-    height: 100%;
-}
-
-.change { 
-   position: relative;
-   padding: 2em;
-   padding-left: 15%;
-   height: 30em;
-   max-width: 150%;  /* for IE 6 */
-   background: black;
-   opacity: 0.7;
-   text-align: left;
-}
-
-
-h1 { 
-   letter-spacing:-1px;
-   color: white;
-}
-
 
 h1 span { 
    color: white; 
    font: Helvetica, Sans-Serif; 
    letter-spacing: -1px;
    margin-bottom: -25px;
-   font-size: 75px;
+   font-size: 1em;
 }
 
 h3 {
