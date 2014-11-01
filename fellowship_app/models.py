@@ -47,7 +47,6 @@ class Applicant(models.Model):
     codingq4 = models.CharField(max_length=45, null=True, blank=True)
     codingq5 = models.CharField(max_length=45, null=True, blank=True)
     codingq6 = models.CharField(max_length=45, null=True, blank=True)
-    recommenders = models.ManyToManyField(Recommender, default = [])
     rec1firstname = models.CharField(max_length=45, null=True, blank=True)
     rec1lastname = models.CharField(max_length=45, null=True, blank=True)
     rec1email = models.CharField(max_length=45, null=True, blank=True)
@@ -165,7 +164,7 @@ class Recommendation(models.Model):
     recq6ex = models.TextField(null=True, blank=True)
     recq7 = models.TextField(null=True, blank=True)
     recq8 = models.TextField(null=True, blank=True)
-    complete = db.Column(db.Integer, default = 0)
+    complete = models.IntegerField(default = 0)
 
     created_at = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
     updated_at = models.DateTimeField(auto_now=True, default=datetime.datetime.now())
@@ -185,7 +184,7 @@ class Recommendation(models.Model):
 
 
 
-class Evaluation(db.Model):
+class Evaluation(models.Model):
     applicant = models.ForeignKey(Applicant)
     evaluator = models.ForeignKey(Evaluator)
     critical = models.IntegerField(null=True, blank=True)
@@ -195,7 +194,7 @@ class Evaluation(db.Model):
     yesno = models.TextField(null=True, blank=True)
     interview = models.TextField(null=True, blank=True)
     additional = models.TextField(null=True, blank=True)
-    complete = db.Column(db.Integer, default = 0)
+    complete = models.IntegerField(default = 0)
 
     created_at = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
     updated_at = models.DateTimeField(auto_now=True, default=datetime.datetime.now())
