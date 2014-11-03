@@ -70,5 +70,22 @@
   
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $('img').on('mouseenter', function() {
+        var originalheight = $(this).height();
+        var newheight = originalheight*1.2;
+        $(this).animate({'height':newheight});
+    }).on('mouseleave', function() {
+        var originalheight = $(this).height();
+        var newheight = originalheight*0.83;
+        $(this).animate({'height':newheight});
+    });
+
+});
+
+</script>
     
 {% endblock %}  
