@@ -77,11 +77,11 @@ $(document).ready(function(){
     $('img').on('mouseenter', function() {
         var originalheight = $(this).height();
         var newheight = originalheight*1.2;
-        $(this).animate({'height':newheight});
+        $(this).animate({'height':newheight}, 'fast');
     }).on('mouseleave', function() {
         var originalheight = $(this).height();
         var newheight = originalheight*0.83;
-        $(this).animate({'height':newheight});
+        $(this).animate({'height':newheight}, 'fast');
     });
 
 });

@@ -32,20 +32,22 @@
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
-$('.jumbotron').each(function() {
-    var obj = $(this);
-    var imgHeight = $('img',obj).height();
-    console.log(imgHeight);
-    $(this).height(imgHeight);
-});
 
-$( window ).resize(function() {
-  $('.jumbotron').each(function() {
-    var obj = $(this);
-    var imgHeight = $('img',obj).height();
-    console.log(imgHeight);
-    $(this).height(imgHeight);
-});
+$('document').ready(function() {
+        $('.jumbotron').each(function() {
+            var obj = $(this);
+            var imgHeight = $('img',obj).height();
+            $(this).height(imgHeight);
+        });
+
+        $( window ).resize(function() {
+          $('.jumbotron').each(function() {
+            var obj = $(this);
+            var imgHeight = $('img',obj).height();
+            $(this).height(imgHeight);
+        });
+        });
+
 });
 
 

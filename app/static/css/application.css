@@ -152,6 +152,34 @@ a:focus {
    text-align: left;
 }
 
+
+.change h1 { 
+   color: white; 
+   font: Helvetica, Sans-Serif; 
+   letter-spacing: -1px;
+   margin-bottom: -25px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .change h1 {font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .change h1 {font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .change h1 {font-size: 1.5em;
+    }
+}
+
+
+
+
+
 .jumbotron input.form-control {
     font-size: 18px;
     padding: 20px;
@@ -174,6 +202,10 @@ a:focus {
     position: relative;
 }
 
+
+
+
+
 .white_text {
     color: #fff;
 }
@@ -184,13 +216,6 @@ a:focus {
 
 .charcoal_text {
     color: #686868;
-}
-
-.change h1 { 
-   color: white; 
-   font: Helvetica, Sans-Serif; 
-   letter-spacing: -1px;
-   margin-bottom: -25px;
 }
 
 
