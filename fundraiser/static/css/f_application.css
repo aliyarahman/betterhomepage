@@ -1,0 +1,57 @@
+/* Bootstrap Overrides */
+
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.navbar a {color: white;}
+
+
+a:hover,
+a:focus {
+    color: #686868;
+}
+
+
+/* Navigation & Brand */
+
+.navbar {
+    border-radius: 0;
+    background-color: #005f9c;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    color: #333;
+    font-size: 20px;
+}
+
+.nav .navbar-nav {
+    color: #686868;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #aebe37;
+    top: -300px;
+}
+
+.white_text {
+    color: #fff;
+}
+
+.green_text {
+    color: #aebe37;
+}
+
+.blue_text {
+    color: #005f9c;
+}
+
+.charcoal_text {
+    color: #686868;
+}

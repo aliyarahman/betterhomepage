@@ -88,6 +88,24 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(os.path.dirname(__file__), '../app/static').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../fundraiser/static/').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../fellowship_app/static').replace('\\','/'),
+)
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+)
+
+
+    
+TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(__file__), '../app/templates').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../fundraiser/templates/fundraiser').replace('\\','/'),
+    os.path.join(os.path.dirname(__file__), '../fellowship_app/templates').replace('\\','/'),
+)
+
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
