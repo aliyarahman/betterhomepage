@@ -37,6 +37,12 @@ def fellow(request, fellow_firstname):
     fellow = Fellow.objects.filter(first_name=fellow_firstname).first()
     return render(request, "fellow.html", {'fellow':fellow})
 
+def executive_director(request):
+    return render(request, "executive_director.html")
+
+def program_director(request):
+    return render(request, "program_director.html")
+
 def thank_you(request):
     return render(request, "thankyou.html")
 
