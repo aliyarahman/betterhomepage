@@ -18,5 +18,5 @@ for fellow in input_file:
     q4 = fellow["What did you do post-residency to relax/recover/have fun/etc?"]
     
     # Commit to the database
-    fellow = Fellow(first_name = fellow['first_name'], last_name=fellow['last_name'], where_from = fellow['where_from'], cohort = "2004 Spring", current_job = fellow['current_job'],post_2014_residency_q1 = q1, post_2014_residency_q2 = q2, post_2014_residency_q3 = q3, post_2014_residency_q4 = q4, page_text=fellow['page_text'])
+    fellow = Fellow(first_name = fellow['first_name'], last_name=fellow['last_name'], where_from = fellow['where_from'], cohort = "2004 Spring", current_job = fellow['current_job'],post_2014_residency_q1 = q1, post_2014_residency_q2 = q2, post_2014_residency_q3 = q3, post_2014_residency_q4 = q4, page_text=fellow['page_text'], github_username = fellow['github_username'])
     fellow.save()

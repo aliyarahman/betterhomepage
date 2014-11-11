@@ -12,10 +12,21 @@
 </div>
 <div class = "container">
     <div class = "row">
-        <div class = "col-md-6">
+        <div class = "col-md-8">
             <div class = "content">
-                <h2>Donate</h2>
-                    Content here or button to lead people to donate.
+                
+                    
+
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="5772KUHYBUX8C">
+                
+                <br><br><br><h3><input type="image" width=100 src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal"> to Code for Progress and help us build a pipeline from communities of color into the coding workforce.</h3>.
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+                <br><br><br><br>
+                <a class="presslink" href="{% url 'index' %}">Back to home page.</a>
 
             </div>
         </div>

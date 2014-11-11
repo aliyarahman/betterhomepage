@@ -59,35 +59,17 @@ class ContactUsView(TemplateView):
             if form.is_valid():
                 first_name = form.cleaned_data.get("first_name")
                 last_name = form.cleaned_data.get("last_name")
+                staff_email = 'info@codeforprogress.org'
                 email = form.cleaned_data.get("email")
                 interested_in = form.cleaned_data.get("interested_in")
                 notes = form.cleaned_data.get("notes")
+                message_interest_string = ""
+                for i in interested_in:
+                    message_interest_string+="\n\t + "+str(i)
                 if first_name and last_name and email and interested_in:
                     contact = Contact(first_name = first_name, last_name = last_name, email = email, interested_in = interested_in)
                     contact.save()
-                    send_mail('Thanks for contacting Code for Progress', "Thanks for getting involved with Code for Progress! We'll contact you shortly!", 'Code for Progress', [email], fail_silently=False)
+                    send_mail('Thanks for contacting Code for Progress', "Thanks for contacting Code for Progress! Our staff will be in touch with you shortly.", 'Code for Progress', [email], fail_silently=False)
+                    send_mail('New email from the CFP website', (first_name+" "+last_name+"("+email+") just wrote to us. \n\nWe have all of their info saved in the database, and they're interested in these things:\n"+message_interest_string+"\n\nThey also said:\n "+notes), email, [staff_email], fail_silently=False)
                     return render (request, 'thankyou.html', {'form': form})
-
-
-
-                '''from email_texts import english_version_emails as emails
-        
-                # Build confirmation email
-                email = emails['contact']['confirmation']
-                email_body = email['body']#.format(first_name=contact.first_name,
-                #     email=contact.email,
-                #     interested_in=contact.interested_in)
-                confirmation_email = (email['subject'], email_body, email['from'], [contact.email])
-        
-                # Build admin notification email
-                email = emails['contact']['admin']
-                admin_email_body = email['body']#.format(email=contact.email)
-                admin_email = (email['subject'], admin_email_body, email['from'], admin_email_list)
-        
-                # Send Them
-                try:
-                    send_mass_mail((admin_email, confirmation_email), fail_silently=False)
-                except:
-                    pass
-                #end of code for confirmation e-mail'''
             return render(request, 'contact.html', {'form' : form})

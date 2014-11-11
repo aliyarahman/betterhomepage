@@ -21,16 +21,21 @@
 		<div class="col-md-4 col-md-offset-2">
 			<img width="300" height="300" src="{% static 'img/'%}{{fellow.first_name}}.png" alt={{fellow.first_name}} />
 		</div>
-		<div class = "col-md-4">
+		<div class = "col-md-5">
          <h1>{{fellow.first_name}} {{fellow.last_name}}</h1>
-         <h3>2014 fellow</h3>            
-		 <br><br>
-		 <p><b>Originally from</b>: {{fellow.where_from}} </p>
-		 {% if fellow.current_job %}
-		 <p><b>Now works as</b>: {{fellow.current_job}} </p>
-		 {% endif %}
-		 <p>{{fellow.page_text}} </p>
+         <h3>2014 fellow</h3>
 
+         <p>
+         <h4><a class="presslink" href="http://www.github.com/{{fellow.github_username}}"> Visit {{fellow.first_name}} on Github</a></h4>            
+		 <br><br>
+		 <p><h4><b>Originally from</b>: {{fellow.where_from}} </h4></p>
+		 {% if fellow.current_job %}
+		 <br><p><h4><b>Now works as</b>: {{fellow.current_job}} </h4></p>
+		 {% endif %}
+		 <br><p><h4><b>Thoughts from the fellowship</b>: {{fellow.page_text}} </h4></p>
+
+
+		 <br><br><br>
 		</div>			
 	</div>
 </div>

@@ -7,11 +7,11 @@ from django.forms.models import modelformset_factory
 
 
 CONTACT_CHOICES =   (('application', ('be notified when the 2015 application is available.')),
-                     ('coach', ('be a professional development or coding coach.')),
-                     ('instructor', ('be a guest instructor.')),
+                     ('coach', ('be a short-term coding or professional development coach')),
+                     ('instructor', ('teach a lesson as a guest instructor.')),
                      ('mentor', ('be a year-long professional mentor.')),
-                     ('email_list', ('receive email updates.')),
-                     ('other', ('contact Code for Progress for another matter.')))
+                     ('email_list', ('receive email updates from Code for Progress.')),
+                     ('other', ('contact Code for Progress for something else.')))
 
 
 class ContactForm(forms.Form):
@@ -23,5 +23,5 @@ class ContactForm(forms.Form):
                             widget=forms.CheckboxSelectMultiple(),
                             required=True,
                             )
-    notes = forms.CharField(max_length = 150, required=False)
+    notes = forms.CharField(required=False, widget = forms.Textarea)
 

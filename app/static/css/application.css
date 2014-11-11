@@ -36,6 +36,18 @@ a:focus {
   font-size: 25px;
 }
 
+.btn-app {
+  background-color: #fff;
+  border-color: #686868;
+  margin: 1% 1% 2% 0%;
+  padding: 2%;
+  color: #686868;
+}
+
+.btn-app:hover {
+  color: #aebe37;
+}
+
 .btn-2 {
   margin-left: 20%;
   margin-right: 20%;
@@ -117,9 +129,6 @@ a:focus {
     top: -300px;
 }
 
-.soc_media_links li {
-  margin: 0px 5px;
-}
 
 .twitter-icon {
   line-height: 3em;
@@ -297,3 +306,8 @@ h3 span {
 form #id_interested_in li { list-style: none;
                             padding-bottom: 7px;}
 form ul#id_interested_in {padding-left: 0px;}
+
+
+.hidden_content {display:none;}
+
+.glyphicon-shopping-cart {margin: 0px; padding: 0px;}
