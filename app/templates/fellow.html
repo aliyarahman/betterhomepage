@@ -25,8 +25,12 @@
          <h1>{{fellow.first_name}} {{fellow.last_name}}</h1>
          <h3>2014 fellow</h3>            
 		 <br><br>
-		 <p><b>Originally from</b>:{{fellow.where_from}} </p>
-		 <p><b>Now works as</b>:{{fellow.current_job}} </p>
+		 <p><b>Originally from</b>: {{fellow.where_from}} </p>
+		 {% if fellow.current_job %}
+		 <p><b>Now works as</b>: {{fellow.current_job}} </p>
+		 {% endif %}
+		 <p>{{fellow.page_text}} </p>
+
 		</div>			
 	</div>
 </div>

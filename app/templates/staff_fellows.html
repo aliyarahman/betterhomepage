@@ -21,15 +21,15 @@
 <h2>2014 Fellows</h2>
 
     {% for fellow in fellows %}
-      <div class="row person_holder text-left" onClick='location.href="{% url 'fellow' 'dago' %}"'>
+      <div class="row person_holder text-left" onClick='location.href="{% url 'fellow' fellow_firstname=fellow.first_name %}"'>
           <div class="col-lg-3">
             <img src="{% static 'img/'%}{{fellow.first_name}}.png" alt={{fellow.first_name}} />
           </div>
           
-          <div class="col-lg-6">
+          <div class="col-lg-8">
             <h2 class="green_text">{{fellow.first_name}} {{fellow.last_name}}</h2>
             <h4><span class="charcoal_text"><b>Originally from</b></span>: {{fellow.where_from}}</h4>
-            {% if fellow.current_job != "" %}<h4><span class="charcoal_text"><b>Currently works as</b></span>: {{fellow.current_job}}</h4>{% endif %}
+            {% if fellow.current_job != "" %}<h4><span class="charcoal_text"><b>Currently works as</b></span>:  {{fellow.current_job}}</h4>{% endif %}
           </div>
 
       </div>
