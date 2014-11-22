@@ -2,3 +2,4 @@
 venv
 betterhomepage/settings.py
 betterhomepage/settings_hidden.py
+app/templates/base.html
