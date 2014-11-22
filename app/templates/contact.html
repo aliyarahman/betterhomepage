@@ -43,8 +43,8 @@
     <div class = "col-md-10">
       <div class = "content">
         <form class="form-horizontal" role="form" action='.' method='post'>
-       
-        <div class="explain-required">
+          {% csrf_token %} 
+          <div class="explain-required">
           <h3> Please fill out the contact form below or email us directly at <span class="green_text">info@codeforprogress.org</span>.</h3><br><br>
           {{'Fields marked with <span class="required">*</span> are required' }}
         </div>
@@ -91,7 +91,7 @@
                 <a class="btn btn-contact btn-lg" href="{% url 'index' %}" role="button">Back</a>
               </div>
           </div>
-           {% csrf_token %}
+
         </form>
       </div>
     </div>
