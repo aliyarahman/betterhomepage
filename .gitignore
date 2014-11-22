@@ -1,3 +1,4 @@
 *.pyc
 venv
+betterhomepage/settings.py
 betterhomepage/settings_hidden.py

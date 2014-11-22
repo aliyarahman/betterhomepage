@@ -67,9 +67,9 @@ class ContactUsView(TemplateView):
                 for i in interested_in:
                     message_interest_string+="\n\t + "+str(i)
                 if first_name and last_name and email and interested_in:
-                    contact = Contact(first_name = first_name, last_name = last_name, email = email, interested_in = interested_in)
+                    contact = Contact(first_name = first_name, last_name = last_name, email = email, interested_in = interested_in, notes=notes)
                     contact.save()
                     send_mail('Thanks for contacting Code for Progress', "Thanks for contacting Code for Progress! Our staff will be in touch with you shortly.", 'Code for Progress', [email], fail_silently=False)
-                    send_mail('New email from the CFP website', (first_name+" "+last_name+"("+email+") just wrote to us. \n\nWe have all of their info saved in the database, and they're interested in these things:\n"+message_interest_string+"\n\nThey also said:\n "+notes), email, [staff_email], fail_silently=False)
+                    send_mail('New email from the CFP website', (first_name+" "+last_name+"("+email+") just wrote to us. \n\nWe have all of their info saved in the database, and they're interested in these things:\n"+message_interest_string+"\n\nThey also said:\n "+notes), email, ['aliya@codeforprogress.org', 'michelle@codeforprogress.org'], fail_silently=False)
                     return render (request, 'thankyou.html', {'form': form})
             return render(request, 'contact.html', {'form' : form})
