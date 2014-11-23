@@ -55,7 +55,6 @@ class ContactUsView(TemplateView):
     def post(self, request, **kwargs):
         if request.method == "POST":
             form = ContactForm(request.POST)
-
             if form.is_valid():
                 first_name = form.cleaned_data.get("first_name")
                 last_name = form.cleaned_data.get("last_name")
