@@ -31,4 +31,4 @@ class Fellow(models.Model):
     github_username = models.CharField(max_length=45, null=True, blank=True)
 
     def __unicode__(self):
-        return self.fullname
+        return self.first_name+" "+self.last_name

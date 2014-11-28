@@ -46,6 +46,9 @@ def program_director(request):
 def thank_you(request):
     return render(request, "thankyou.html")
 
+def learn(request):
+    return render(request, "learn.html")
+
 class ContactUsView(TemplateView):
     def get(self, request, **kwargs):
         form = ContactForm()
@@ -72,3 +75,5 @@ class ContactUsView(TemplateView):
                     send_mail('New email from the CFP website', (first_name+" "+last_name+"("+email+") just wrote to us. \n\nWe have all of their info saved in the database, and they're interested in these things:\n"+message_interest_string+"\n\nThey also said:\n "+notes), email, ['aliya@codeforprogress.org'], fail_silently=False)
                     return redirect('thank_you')
             return render(request, 'contact.html', {'form' : form})
+
+

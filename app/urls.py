@@ -16,5 +16,6 @@ urlpatterns = patterns('',
     url(r'^fellow/(?P<fellow_firstname>.+)/$', views.fellow, name='fellow'),
     url(r'^staff_fellows/$', views.staff_fellows, name='staff_fellows'),
     url(r'^contact/$', ContactUsView.as_view(), name='contact'),
-    url(r'^thank_you/$', views.thank_you, name='thank_you'),  
+    url(r'^thank_you/$', views.thank_you, name='thank_you'),
+    url(r'^learn/$', views.learn, name='learn'),
 )

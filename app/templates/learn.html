@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block container %}
+
+<div class="jumbotron-title">
+    <div class="container">
+        <div class = "row">
+            <div class = "col-md-5">
+                <h1>About Code For Progress</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "container">
+    <div class = "row">
+        <br><br>
+            <div class = "col-md-6">
+                <div class = "content">
+                    <h2 class="green_text">The Code for Progress curriculum covers full-stack, user-centered, agile software development and professional development for the contemporary coding workforce.</h2>
+
+
+                    <br>
+                    Quick links
+                    <ul>
+                        <li><a href="#stacks" class="presslink">Stacks on stacks on stacks: What are all these languages?</a></li>
+                        <li><a href="#schedule" class="presslink">Weekly schedule: The official fellowship course of learning</a></li>
+                        <li><a href="#badges" class="presslink">Badges: Things to work towards as you learn</a></li>
+                        <li><a href="#words" class="presslink">All these words: Some basic coding vocabulary, written for humans</a></li>
+
+                    </ul>
+
+                    <br><br><a name="stacks"></a><h3 class="green_text">Stacks on stacks on stacks</h3>
+                    <p> This is where we explain the full stack. <span class="green_text read_more">Read more</span><span class="hidden_section schedule">Here's all the rest of the stuff.</span></p>
+
+                    
+                    <br><a name="schedule"></a><h3 class='green_text'>Weekly schedule</h3>
+                    <p> This is the weekly schedule. <span class="green_text read_more">Read more</span><span class="hidden_text">And here's the hidden part.</span>
+
+
+                    <br><a name="badges"></a><h3 class="green_text">Badges</h3>
+                    <p> Here are our badges. <span class="green_text read_more">Read more</span><span class="hidden_text">And here's the hidden part</span>
+
+                    <br><a name="words"></a><h3 class="green_text">All these words</h3>
+                    <p> This is where we explain the full stack. <span class="green_text read_more">Read more</span><span class="hidden_text">And here's the hidden part</span>
+
+            </div>
+        </div>        
+        {% if messages %}
+          {% for message in messages %}
+                <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">
+                {{ message }}
+                </div>
+          {% endfor %}
+        {% endif %}
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+$('document').ready(function() {
+        $('.read_more.stacks').on('click', function() {
+            $(this).hide();
+            $('.hidden_content.stacks').slideDown();
+        });
+
+        $('.read_more.schedule').on('click', function() {
+            $(this).hide();
+            $('.hidden_content.schedule').slideDown();
+        });
+
+        $('.read_more.badges').on('click', function() {
+            $(this).hide();
+            $('.hidden_content.badges').slideDown();
+        });
+
+        $('.read_more.words').on('click', function() {
+            $(this).hide();
+            $('.hidden_content.words').slideDown();
+        });
+
+});
+
+
+
+</script>
+
+{% endblock %}
