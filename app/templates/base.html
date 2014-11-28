@@ -29,7 +29,8 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-	<div class="navbar" role="navigation">
+
+	<div class="navbar navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header" href>
 
@@ -53,20 +54,19 @@
             <li><a href="{% url 'partner' %}">Partner</a></li>
           </ul>
 
-          <span class="soc_media_links">
-              <ul class = 'nav navbar-nav navbar-right'>
+          <ul class = 'nav navbar-nav navbar-right'>
 
-                <li><a class="btn-nav" href="{% url 'contact' %}"><span class="glyphicon glyphicon-envelope"></span></a></li>
-                <li><a class="btn-nav" href="{% url 'donate' %}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-                
-                <li class="twitter-icon"><a href="https://twitter.com/codeforprogress" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @codeforprogress</a>
-                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+            <li><a class="btn-nav" href="{% url 'contact' %}"><span class="glyphicon glyphicon-envelope"></span></a></li>
+            <li><a class="btn-nav" href="{% url 'donate' %}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            
+            <li class="twitter-icon"><a href="https://twitter.com/codeforprogress" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @codeforprogress</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
 
-                <li><div class="fb-like" data-href="http://www.facebook.com/codeforprogress" data-width="16" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+            <li><div class="fb-like" data-href="http://www.facebook.com/codeforprogress" data-width="16" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
 
-              </ul>
-        </span>
-        </div><!--/.nav-collapse -->
+          </ul>
+
+        </div><!--/.navbar-collapse -->
       </div>
     </div>
 
@@ -111,10 +111,10 @@
 
     {% endblock %}
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <!--  <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/application.js' %}"></script> -->
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/application.js' %}"></script>
   </body>
 </html>

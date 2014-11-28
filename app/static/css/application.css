@@ -116,12 +116,11 @@ a:focus {
 }
 
 .navbar-brand {
-    color: #333;
     font-size: 20px;
 }
 
 .nav .navbar-nav {
-    color: #686868;
+    color: #fff;
 }
 
 .navbar-toggle .icon-bar {
@@ -130,13 +129,16 @@ a:focus {
 }
 
 
+
 .twitter-icon {
   line-height: 3em;
+  color: white;
 }
 
 .fb-like {
   line-height: 1.9em;
   margin-left: 10px;
+  color:white;
 }
 
 /* Jumbotron */
@@ -168,8 +170,6 @@ a:focus {
 }
 
 
-
-
 .change h1 { 
    color: white; 
    font: Helvetica, Sans-Serif; 
@@ -183,19 +183,15 @@ a:focus {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .change h1 {font-size: 2.5em;
+@media screen and (max-width: 800px) {
+    .change h1 {font-size: 2em;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .change h1 {font-size: 1.5em;
+.change, change h1 {display: none;
     }
 }
-
-
-
-
 
 .jumbotron input.form-control {
     font-size: 18px;
@@ -218,8 +214,6 @@ a:focus {
     left: -12px;
     position: relative;
 }
-
-
 
 
 
