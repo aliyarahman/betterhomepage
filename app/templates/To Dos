@@ -1,5 +1,0 @@
-To Dos
-================
-
-- Update server settings to Debug=False
-- Repopulate database with new db_populate.py script
