@@ -148,6 +148,8 @@ a:focus {
   margin-bottom: 4em;
 }
 
+.block {display: block; clear: both;}
+
 .jumbotron img {
   width: 100%;
   position: absolute;

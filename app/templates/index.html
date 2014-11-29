@@ -10,7 +10,7 @@
     </div>
     
     <div class="container">
-        <div class="row">
+        <div class="row block">
             <div class="col-md-4">
                 <a class="btn btn-primary btn-lg" href="{% url 'apply' %}" role="button">Apply »</a>
                 <h4 class = "buttontagline"> Learn how you can be a 2015 fellow.</h4> 
@@ -30,10 +30,15 @@
 
 
 </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="{% static 'js/jquery-2.1.0.min.js' %}"></script>
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script>
 
 $('document').ready(function() {
+
+
         $('.jumbotron').each(function() {
             var obj = $(this);
             var imgHeight = $('img',obj).height();

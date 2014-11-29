@@ -1,6 +1,7 @@
 from app.models import *
 import csv
 
+Fellow.objects.all().delete()
 
 # Section 1: Open the CSV - direct download with no filename changes from the Google doc
 
