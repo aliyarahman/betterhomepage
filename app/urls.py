@@ -18,4 +18,5 @@ urlpatterns = patterns('',
     url(r'^contact/$', ContactUsView.as_view(), name='contact'),
     url(r'^thank_you/$', views.thank_you, name='thank_you'),
     url(r'^learn/$', views.learn, name='learn'),
+    url(r'^yearInReview2014/$', views.yearInReview2014, name='yearInReview2014'),
 )

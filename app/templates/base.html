@@ -45,25 +45,25 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
- 	          <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'staff_fellows' %}">Staff & Fellows</a></li>
-            <li><a href="{% url 'press' %}">Press</a></li>
+ 	          <li class="btn-nav"><a href="{% url 'about' %}">About</a></li>
+            <li class="btn-nav"><a href="{% url 'staff_fellows' %}">Staff & Fellows</a></li>
+            <li class="btn-nav" ><a href="{% url 'press' %}">Press</a></li>
 
-            <li><a href="{% url 'apply' %}">Apply</a></li>
-            <li><a href="{% url 'community' %}">Get Involved</a></li>
-            <li><a href="{% url 'learn' %}">Learn</a></li>
-            <li><a href="{% url 'partner' %}">Partner</a></li>
+            <li class="btn-nav"><a href="{% url 'apply' %}">Apply</a></li>
+            <li class="btn-nav"><a href="{% url 'community' %}">Get Involved</a></li>
+            <li class="btn-nav" ><a href="{% url 'learn' %}">Learn</a></li>
+            <li class="btn-nav"><a href="{% url 'partner' %}">Partner</a></li>
           </ul>
 
           <ul class = 'nav navbar-nav navbar-right'>
 
-            <li><a class="btn-nav" href="{% url 'contact' %}"><span class="glyphicon glyphicon-envelope"></span></a></li>
-            <li><a class="btn-nav" href="{% url 'donate' %}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li class="btn-nav"><a href="{% url 'contact' %}"><span class="glyphicon glyphicon-envelope"></span></a></li>
+            <li  class="btn-nav"><a href="{% url 'donate' %}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
             
-            <li><a href="https://twitter.com/codeforprogress" data-show-count="false" data-show-screen-name="false"><img class="twitter-icon" src="{% static 'img/twitter.png' %}"></a>
+            <li class="btn-nav"><a href="https://twitter.com/codeforprogress" data-show-count="false" data-show-screen-name="false"><img class="twitter-icon" src="{% static 'img/twitter.png' %}"></a>
                   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
 
-            <li><a href="http://www.facebook.com/codeforprogress"><img class="fb-icon" src="{% static 'img/facebook.png' %}"></a></li>
+            <li class="btn-nav"><a href="http://www.facebook.com/codeforprogress"><img class="fb-icon" src="{% static 'img/facebook.png' %}"></a></li>
 
           </ul>
 

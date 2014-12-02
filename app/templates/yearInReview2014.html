@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block container %}
+{% load staticfiles %}
+
+<div class="jumbotron-title">
+    <div class="container">
+        <div class = "row">
+            <div class = "col-md-6">
+                <h1>2014 In Review</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+            <div class = "content text-center">
+
+           <a class="presslink" href="{% url 'donate' %}"><h3>Donate to Code for Progress</h3></a>
+
+            <img src="/static/img/cfp-2014review.jpg">
+
+            <a href="{% url 'donate' %}">            <img src="/static/img/donate.jpg"></a>
+
+            </div>
+        </div>
+    </div>
+</div>
+        
+        {% if messages %}
+          {% for message in messages %}
+                <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">
+                {{ message }}
+                </div>
+          {% endfor %}
+        {% endif %}
+
+    </div>
+</div>
+{% endblock %}
