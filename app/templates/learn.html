@@ -22,17 +22,17 @@
                     <br>
                     Quick links
                     <ul>
-                        <li><a href="#stacks" class="presslink">Stacks on stacks on stacks: A quick explanation of how coding languages fit together to make apps and sites (and how CFP teaches them)</a></li>
-                        <li><a href="#schedule" class="presslink">Weekly schedule: The official course of learning for the CFP fellowship</a></li>
-                        <li><a href="#badges" class="presslink">Badges: Achievements to work towards</a></li>
-                        <li><a href="#words" class="presslink">All these words: Basic coding vocabulary, written for regular folks</a></li>
+                        <li><a href="{% url 'learn' %}#stacks" class="presslink">Stacks on stacks on stacks: A regular folks' guide to how code fits together to make apps and sites</a></li>
+                        <li><a href="{% url 'learn' %}#schedule" class="presslink">Weekly schedule: The official course of learning for the CFP fellowship</a></li>
+                        <li><a href="{% url 'learn' %}#badges" class="presslink">Badges: Achievements to work towards as you learn to code</a></li>
+                        <li><a href="{% url 'learn' %}#words" class="presslink">All these words: Basic coding vocabulary for non-coders</a></li>
 
                     </ul>
 
                     <br><br><a name="stacks"></a><h3 class="green_text">Stacks on stacks on stacks</h3>
-                    <p> Learning to code is really just about learning how to give instructions to (and understand replies from) different kinds of machines and computer programs - in a language they can understand. The basic idea is not very different from helping a toddler learn to eat with a spoon or pick up their toys - we teach them combinations of simple steps that let them eventually do things on their own. <span class="green_text read_more stacks">Read more...</span></p>
+                    <p> Learning to code is really just about learning how to give good instructions to different kinds of machines and computer programs - in a language they can understand. The basic idea is not very different from helping a toddler learn to eat with a spoon or pick up their toys - we teach them combinations of simple steps that let them eventually do things on their own. <span class="green_text read_more stacks">Read more...</span></p>
 
-                    <p><span class="hidden_content stacks"><br>Just as humans aren't born with the skills to talk to each other, coders aren't born with the skills to talk to machines. We have to learn and practice the languages and words we need to do the things we want, and our language changes depending on who or what we're talking to. Apps and website uses a bunch of different programs and machines to function - all <b>stacked</b> up in a specific order, with a way to communicate between each other (sometimes over a very long distance).</span></p>
+                    <p><span class="hidden_content stacks"><br>Just as humans aren't born with the skills to talk to each other, coders aren't born with the skills to talk to machines. We have to learn and practice words and languages that help us do the things we want, and our language changes depending on who or what we're talking to. Apps and website uses a bunch of different programs and machines to function - all <b>stacked</b> up in a specific order, using different languages to communicate between each other (sometimes over a very long distance).</span></p>
 
                     <p><span class="hidden_content stacks"><br>Sometimes, professional coders specialize in just part of this stack of machines and languages. The people who are really good at talking to the machines closest to your eyes and fingers when you're using an app are called <b>"front end"</b> developers. They speak <b>"client-side"</b> languages filled with instructions for how to make things show up on a screen and react to your movements. The people who talk to the machines that hold the central brains of the app or website are called <b>"back-end"</b> developers, and they speak "server-side" languages that know how to do calculations, dig back into memory, and pass information along to the front end.</span></p>
 
@@ -42,17 +42,17 @@
 
                     
                     <br><br><a name="schedule"></a><h3 class='green_text'>Weekly schedule</h3>
-                    <p>Code for Progress fellows learn to code starting with the <b>front end</b> and moving towards the <b class="purple_text">back end</b> over 20 weeks. To build apps and sites that work for lots of different communities, they also spend time each week practicing how to see and listen to users and team members by working on real-world <b>community projects</b> through <b>human-centered design</b> and <b>agile project management</b>. Starting with the first day of class, they also do weekly professional development exercises - like resume writing, practice interviews, and job searching.<span class="green_text read_more schedule"> See the weekly schedule...</span></p><br>
+                    <p>Code for Progress fellows learn to code starting with the <b>front end</b> and moving towards the <b class="purple_text">back end</b> over 20 weeks. To build apps and sites that work for lots of different communities, they also spend time each week practicing how to see and listen to users and team members by working on real-world community projects through <b>human-centered design</b> and <b>agile project management</b>. Starting with the first day of class, they also do weekly professional development exercises - like resume writing, practice interviews, and job searching.<span class="green_text read_more schedule"> See the weekly schedule...</span></p><br>
                     <div class="hidden_content schedule">
                         <ul>
                         {% for week in weeks %}
                             <div class="row">
                                 <div class="row">
                                     <div class="col-xs-2 green_text">Week {{week.number}}</div>
-                                    <div class="col-xs-4">{{week.title}}</div>
+                                    <div class="col-xs-9"><b>{{week.title}}</b></div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-xs-offset-2 col-xs-4"><i>{{week.description}}</i></div>
+                                    <div class="col-xs-offset-2 col-xs-9"><i>{{week.description}}</i></div>
                                 </div><br>
                             </div>
                         {% endfor %}
@@ -61,19 +61,19 @@
 
 
                     <br><br><a name="badges"></a><h3 class="green_text">Badges</h3>
-                    <p> Code for Progress doesn't use conventional grades and tests - but we do use badges to mark what fellows are able to do after they've mastered a skill. <span class="green_text read_more badges"> Read more... </span>
+                    <p> Code for Progress doesn't use conventional grades and tests - but we do use badges to mark what fellows are able to do after they've mastered a skill. <span class="green_text read_more badges"> See the badge categories... </span>
                     <div class="hidden_content badges">
                     <ul>
-                            <br><span class="green_text">Design and project management badges</span>
-                            <br><span class="green_text">Professional skill badges</span>
-                            <br><span class="green_text">BASH badges</span>
-                            <br><span class="green_text">HTML badges</span>
-                            <br><span class="green_text">CSS badges</span>
-                            <br><span class="green_text">JavaScript badges</span>
-                            <br><span class="green_text">Angular badges</span>
-                            <br><span class="green_text">Python badges</span>
-                            <br><span class="green_text">SQL badges</span>
-                            <br><span class="green_text">Django badges</span>
+                            <br><span class="green_text">Design and project management</span>
+                            <br><span class="green_text">Professional skills</span>
+                            <br><span class="green_text">BASH</span>
+                            <br><span class="green_text">HTML</span>
+                            <br><span class="green_text">CSS</span>
+                            <br><span class="green_text">JavaScript</span>
+                            <br><span class="green_text">Angular.js</span>
+                            <br><span class="green_text">Python</span>
+                            <br><span class="green_text">SQL</span>
+                            <br><span class="green_text">Django</span>
                         </ul>
                     </div>
                     </p>
@@ -81,7 +81,7 @@
                     </span></p>
 
                     <br><br><a name="words"></a><h3 class="green_text">All these words</h3>
-                    <p>We have a no-jargon practice in our community and classroom that helps us support each other's learning. It says that technical terms and acronyms should be explained if they are new to anyone in the space, and it applies to our website too. <span class="green_text read_more words">Learn some basic coding words...</span>
+                    <p>We have a no-jargon practice in our community and classroom that helps us support each other's learning. It says that technical terms and acronyms should be explained if they are new to anyone in the space, and it applies to our website too. <span class="green_text read_more words">Check out our glossary, coming soon...</span>
                     </p>
 
             </div>

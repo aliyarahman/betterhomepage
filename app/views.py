@@ -47,26 +47,25 @@ def thank_you(request):
     return render(request, "thankyou.html")
 
 def learn(request):
-    weeks = [{'number':1, 'title': 'Title', 'description':'Description'},
-    {'number':2, 'title': 'Title', 'description':'Description'},
-    {'number':3, 'title': 'Title', 'description':'Description'},
-    {'number':4, 'title': 'Title', 'description':'Description'},
-    {'number':5, 'title': 'Title', 'description':'Description'},
-    {'number':6, 'title': 'Title', 'description':'Description'},
-    {'number':7, 'title': 'Title', 'description':'Description'},
-    {'number':8, 'title': 'Title', 'description':'Description'},
-    {'number':9, 'title': 'Title', 'description':'Description'},
-    {'number':10, 'title': 'Title', 'description':'Description'},
-    {'number':11, 'title': 'Title', 'description':'Description'},
-    {'number':12, 'title': 'Title', 'description':'Description'},
-    {'number':13, 'title': 'Title', 'description':'Description'},
-    {'number':14, 'title': 'Title', 'description':'Description'},
-    {'number':15, 'title': 'Title', 'description':'Description'},
-    {'number':16, 'title': 'Title', 'description':'Description'},
-    {'number':17, 'title': 'Title', 'description':'Description'},
-    {'number':18, 'title': 'Title', 'description':'Description'},
-    {'number':19, 'title': 'Title', 'description':'Description'},
-    {'number':20, 'title': 'Title', 'description':'Description'}]
+    weeks = [{'number':1, 'title': 'Code, Power, and the Big Picture', 'description':'Our communities. Our country. Our code.'},
+    {'number':2, 'title': 'Grassroots and Building Blocks', 'description':'User stories. Wireframes. Human-centered design. Linux. The BASH command line. Github pushes.'},
+    {'number':3, 'title': 'No More Drama: Project planning for trust and usability', 'description':'Agile project management. Design basics. The The front end. Bootstrap. HTML. CSS.'},
+    {'number':4, 'title': 'For Activists Who Have Considered Leaving When the Movement is Not Enough', 'description':'Race, gender, class, sexuality, and the workplace. Resumes and cover letters. Test-driven development. Variables. Control flow. Strings. Loops. JavaScript.'},
+    {'number':5, 'title': 'Do Androids Dream of Electric Ladies?', 'description':'Digital culture shift and object-oriented programming. Functions. Objects. Modularizing. DRY JavaScript.'},
+    {'number':7, 'title': 'Empowered APIs', 'description':'jQuery. APIs. RESTful services. JSON. XML. Ajax.'},
+    {'number':8, 'title': 'Doors and Phones and Code and Power: Telling our communities\' stories through data', 'description':'Data visualization. d3. JSON.'},
+    {'number':9, 'title': 'Architects and Model Glue: How social-justice software sticks together', 'description':'Model-view-whatever. Single-page applications. Angular.js'},
+    {'number':10, 'title': 'Who Runs the World? urls.', 'description':'How the internet works. Angular.js. Heroku. Basic deployment and dev-ops.'},
+    {'number':11, 'title': 'Huck, Quinn, Black, White', 'description':'The back end. Security. Python.'},
+    {'number':12, 'title': 'Ten Thousand Sign-In Sheets', 'description':'Data. Python. JSON collections. The CSV library.'},
+    {'number':13, 'title': 'Fast, Furious Data Driving: Databases and SQL for understanding communities', 'description':'Big data. Databases. SQL. PostgreSQL.'},
+    {'number':14, 'title': 'Narrative Control', 'description':'Telling better stories with data. Queries. Joins. SQL. PostgreSQL. Major data vendor platforms.'},
+    {'number':15, 'title': 'After List-Building: What can data do for movements?', 'description':'Cleaning data. Data analysis. SQLAlchemy. PANDAS. Python. PostgreSQL.'},
+    {'number':16, 'title': 'Code for Ordinary People: Linking back-end and front-end code for usable apps', 'description':'Django. Model-view-whatever revisited.Migrations. South.'},
+    {'number':17, 'title': 'Building a Crew and Rolling Deep: The work of diversity in the 2014 coding workforce', 'description':'Job searching. Legacy code. Django.'},
+    {'number':18, 'title': 'Business as Casual', 'description':'Clothes, privilege, and interview prep. Job searching. Django.'},
+    {'number':19, 'title': 'The Cohort and the Drawing Board', 'description':'Job searching. Whiteboarding. Resumes and cover letters.'},
+    {'number':20, 'title': 'The Road From Here', 'description':'Mock interviews. Job searching. Graduation.'}]
     return render(request, "learn.html", {'weeks': weeks})
 
 class ContactUsView(TemplateView):

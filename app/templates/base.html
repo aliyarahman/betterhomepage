@@ -51,6 +51,7 @@
 
             <li><a href="{% url 'apply' %}">Apply</a></li>
             <li><a href="{% url 'community' %}">Get Involved</a></li>
+            <li><a href="{% url 'learn' %}">Learn</a></li>
             <li><a href="{% url 'partner' %}">Partner</a></li>
           </ul>
 
@@ -59,10 +60,10 @@
             <li><a class="btn-nav" href="{% url 'contact' %}"><span class="glyphicon glyphicon-envelope"></span></a></li>
             <li><a class="btn-nav" href="{% url 'donate' %}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
             
-            <li class="twitter-icon"><a href="https://twitter.com/codeforprogress" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @codeforprogress</a>
+            <li><a href="https://twitter.com/codeforprogress" data-show-count="false" data-show-screen-name="false"><img class="twitter-icon" src="{% static 'img/twitter.png' %}"></a>
                   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
 
-            <li><div class="fb-like" data-href="http://www.facebook.com/codeforprogress" data-width="16" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></li>
+            <li><a href="http://www.facebook.com/codeforprogress"><img class="fb-icon" src="{% static 'img/facebook.png' %}"></a></li>
 
           </ul>
 
@@ -101,5 +102,30 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  console.log("What!");
+
+  $('.fb-icon').on('mouseover', function(){
+    $(this).attr("src", "/static/img/facebook-hover.png")
+  });
+
+  $('.fb-icon').on('mouseout', function(){
+    $(this).attr("src", "/static/img/facebook.png")
+  });
+
+  $('.twitter-icon').on('mouseover', function(){
+    $(this).attr("src", "/static/img/twitter-hover.png")
+  });
+
+  $('.twitter-icon').on('mouseout', function(){
+    $(this).attr("src", "/static/img/twitter.png")
+  });
+
+}); 
+
+</script>
+
   </body>
 </html>

@@ -125,20 +125,15 @@ a:focus {
 
 .navbar-toggle .icon-bar {
     background-color: #aebe37;
-    top: -300px;
 }
-
 
 
 .twitter-icon {
-  line-height: 3em;
-  color: white;
+  height: 1em;
 }
 
-.fb-like {
-  line-height: 1.9em;
-  margin-left: 10px;
-  color:white;
+.fb-icon {
+  height: 1em;
 }
 
 /* Jumbotron */
