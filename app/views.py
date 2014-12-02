@@ -47,7 +47,27 @@ def thank_you(request):
     return render(request, "thankyou.html")
 
 def learn(request):
-    return render(request, "learn.html")
+    weeks = [{'number':1, 'title': 'Title', 'description':'Description'},
+    {'number':2, 'title': 'Title', 'description':'Description'},
+    {'number':3, 'title': 'Title', 'description':'Description'},
+    {'number':4, 'title': 'Title', 'description':'Description'},
+    {'number':5, 'title': 'Title', 'description':'Description'},
+    {'number':6, 'title': 'Title', 'description':'Description'},
+    {'number':7, 'title': 'Title', 'description':'Description'},
+    {'number':8, 'title': 'Title', 'description':'Description'},
+    {'number':9, 'title': 'Title', 'description':'Description'},
+    {'number':10, 'title': 'Title', 'description':'Description'},
+    {'number':11, 'title': 'Title', 'description':'Description'},
+    {'number':12, 'title': 'Title', 'description':'Description'},
+    {'number':13, 'title': 'Title', 'description':'Description'},
+    {'number':14, 'title': 'Title', 'description':'Description'},
+    {'number':15, 'title': 'Title', 'description':'Description'},
+    {'number':16, 'title': 'Title', 'description':'Description'},
+    {'number':17, 'title': 'Title', 'description':'Description'},
+    {'number':18, 'title': 'Title', 'description':'Description'},
+    {'number':19, 'title': 'Title', 'description':'Description'},
+    {'number':20, 'title': 'Title', 'description':'Description'}]
+    return render(request, "learn.html", {'weeks': weeks})
 
 class ContactUsView(TemplateView):
     def get(self, request, **kwargs):

@@ -38,35 +38,26 @@
 
                     <p><span class="hidden_content stacks"><br>Code for Progress teaches "full stack" app development, which means we teach the languages that coders need to talk to both the front end and the back end of the app or website's stack, plus a couple of <b>'frameworks"</b>, which are tools that coders use to make the front end and back end talk to each other easily and efficiently. Our front-end languages are HTML, CSS, and JavaSript. Our back-end languages are Python and SQL. Our frameworks are Angular.js and Django.</span></p>
 
-                    <p><span class="hidden_content stacks"><br>Of course, just like in everyday life, it doesn't matter what languages you're speaking if you don't know how to listen too. There are lots of different ways that coders plan out how they are going to do a project and understand who they are making it for. At CFP, we teach<b> human-centered design</b> and <b>agile project management</b> as our primary listening tools.</span></p>
+                    <p><span class="hidden_content stacks"><br>Of course, just like in everyday life, giving good instructions means knowing how to listen, reflect, and plan too. There are lots of different ways that coders plan out what they are going to build and understand who they are building it for. CFP teaches<b> human-centered design</b> and <b>agile project management</b> as our primary listening and planning tools.</span></p>
 
                     
                     <br><br><a name="schedule"></a><h3 class='green_text'>Weekly schedule</h3>
-                    <p>Code for Progress fellows learn to code starting with the <b>front end</b> and moving towards the <b class="purple_text">back end</b> over 20 weeks. To use those languages for apps and sites that work for lots of different communities, they also spend time each week practicing how to see and listen to users and team members by working on real-world <b>community projects</b> using <b>human-centered design</b> and <b>agile project management</b>. Each week, starting with the first day of class, they also do professional development exercises - like resume writing, practice interviews, and job searching.<span class="green_text read_more schedule"> See the weekly schedule...</span>
+                    <p>Code for Progress fellows learn to code starting with the <b>front end</b> and moving towards the <b class="purple_text">back end</b> over 20 weeks. To build apps and sites that work for lots of different communities, they also spend time each week practicing how to see and listen to users and team members by working on real-world <b>community projects</b> through <b>human-centered design</b> and <b>agile project management</b>. Starting with the first day of class, they also do weekly professional development exercises - like resume writing, practice interviews, and job searching.<span class="green_text read_more schedule"> See the weekly schedule...</span></p><br>
                     <div class="hidden_content schedule">
                         <ul>
-                            <br><span class="green_text">Week 1</span>:
-                            <br><span class="green_text">Week 2</span>:
-                            <br><span class="green_text">Week 3</span>:
-                            <br><span class="green_text">Week 4</span>:
-                            <br><span class="green_text">Week 5</span>:
-                            <br><span class="green_text">Week 6</span>:
-                            <br><span class="green_text">Week 7</span>:
-                            <br><span class="green_text">Week 8</span>:
-                            <br><span class="green_text">Week 9</span>:
-                            <br><span class="green_text">Week 10</span>:
-                            <br><span class="green_text">Week 11</span>:
-                            <br><span class="green_text">Week 12</span>:
-                            <br><span class="green_text">Week 13</span>:
-                            <br><span class="green_text">Week 14</span>:
-                            <br><span class="green_text">Week 15</span>:
-                            <br><span class="green_text">Week 16</span>:
-                            <br><span class="green_text">Week 17</span>:
-                            <br><span class="green_text">Week 18</span>:
-                            <br><span class="green_text">Week 19</span>:
-                            <br><span class="green_text">Week 20</span>:
+                        {% for week in weeks %}
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-xs-2 green_text">Week {{week.number}}</div>
+                                    <div class="col-xs-4">{{week.title}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-offset-2 col-xs-4"><i>{{week.description}}</i></div>
+                                </div><br>
+                            </div>
+                        {% endfor %}
                         </ul>
-                    </div></p>
+                    </div>
 
 
                     <br><br><a name="badges"></a><h3 class="green_text">Badges</h3>
@@ -90,20 +81,7 @@
                     </span></p>
 
                     <br><br><a name="words"></a><h3 class="green_text">All these words</h3>
-                    <p>We have a no-jargon practice in our community and classroom that helps us all support each other's learning. It says that technical terms and acronyms should be explained if they are new to anyone in the space - and it applies to our website too. <span class="green_text read_more words">Learn some basic coding words...</span>
-
-                    <ul class="hidden_content words">
-                            <br><span class="green_text">Back-end</span>: The machines and languages that 
-                            <br><span class="green_text">Client-side</span>: The machines and languages that 
-                            <br><span class="green_text">Coder</span>: The machines and languages that 
-                            <br><span class="green_text">Developer</span>: A
-                            <br><span class="green_text">Front-end</span>: The machines and languages that 
-                            <br><span class="green_text">Full-stack</span>: The whole group of
-                            <br><span class="green_text">Hack/hacking/hacker </span>: The
-                            <br><span class="green_text">Hackathon</span>: The
-                            <br><span class="green_text">Programmer</span>: A
-                            <br><span class="green_text">Server-side</span>: The
-                        </ul>
+                    <p>We have a no-jargon practice in our community and classroom that helps us support each other's learning. It says that technical terms and acronyms should be explained if they are new to anyone in the space, and it applies to our website too. <span class="green_text read_more words">Learn some basic coding words...</span>
                     </p>
 
             </div>
