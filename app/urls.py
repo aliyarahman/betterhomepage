@@ -17,6 +17,6 @@ urlpatterns = patterns('',
     url(r'^staff_fellows/$', views.staff_fellows, name='staff_fellows'),
     url(r'^contact/$', ContactUsView.as_view(), name='contact'),
     url(r'^thank_you/$', views.thank_you, name='thank_you'),
-    url(r'^learn/$', views.learn, name='learn'),
+    url(r'^learn_portal/$', views.learn_portal, name='learn_portal'),
     url(r'^yearInReview2014/$', views.yearInReview2014, name='yearInReview2014'),
 )

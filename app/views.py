@@ -49,7 +49,7 @@ def thank_you(request):
 def yearInReview2014(request):
     return render(request, "yearInReview2014.html")
 
-def learn(request):
+def learn_portal(request):
     weeks = [{'number':1, 'title': 'Code, Power, and the Big Picture', 'description':'Our communities. Our country. Our code.'},
     {'number':2, 'title': 'Grassroots and Building Blocks', 'description':'User stories. Wireframes. Human-centered design. Linux. The BASH command line. Github pushes.'},
     {'number':3, 'title': 'No More Drama: Project planning for trust and usability', 'description':'Agile project management. Design basics. The The front end. Bootstrap. HTML. CSS.'},
@@ -69,7 +69,7 @@ def learn(request):
     {'number':18, 'title': 'Business as Casual', 'description':'Clothes, privilege, and interview prep. Job searching. Django.'},
     {'number':19, 'title': 'The Cohort and the Drawing Board', 'description':'Job searching. Whiteboarding. Resumes and cover letters.'},
     {'number':20, 'title': 'The Road From Here', 'description':'Mock interviews. Job searching. Graduation.'}]
-    return render(request, "learn.html", {'weeks': weeks})
+    return render(request, "learn_portal.html", {'weeks': weeks})
 
 class ContactUsView(TemplateView):
     def get(self, request, **kwargs):
