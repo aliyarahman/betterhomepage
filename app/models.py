@@ -8,7 +8,7 @@ class Contact(models.Model):
     last_name = models.CharField(max_length=15)
     email = models.EmailField(max_length=255)
     interested_in = models.CharField(max_length=300, null=True, blank=True)
-    notes = models.CharField(max_length=150, blank=True)
+    notes = models.TextField()
     
     created_at = models.DateTimeField(auto_now_add=True, default=datetime.datetime.now())
     updated_at = models.DateTimeField(auto_now=True, default=datetime.datetime.now())
