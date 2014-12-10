@@ -100,33 +100,11 @@
 
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script async src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-<script>
-$(document).ready(function() {
-  console.log("What!");
-
-  $('.fb-icon').on('mouseover', function(){
-    $(this).attr("src", "/static/img/facebook-hover.png")
-  });
-
-  $('.fb-icon').on('mouseout', function(){
-    $(this).attr("src", "/static/img/facebook.png")
-  });
-
-  $('.twitter-icon').on('mouseover', function(){
-    $(this).attr("src", "/static/img/twitter-hover.png")
-  });
-
-  $('.twitter-icon').on('mouseout', function(){
-    $(this).attr("src", "/static/img/twitter.png")
-  });
-
-}); 
-
-</script>
+<script async src="{% static 'css/application.css' %}"> </script>
 
   </body>
 </html>
