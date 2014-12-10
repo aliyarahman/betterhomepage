@@ -2,3 +2,5 @@
 venv
 betterhomepage/settings.py
 betterhomepage/settings_hidden.py
+dump.csv
+dumpdatabase.py
