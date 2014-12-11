@@ -49,6 +49,9 @@ def thank_you(request):
 def yearInReview2014(request):
     return render(request, "yearInReview2014.html")
 
+def rootscamp(request):
+    return render(request, "rootscamp.html")
+
 def learn_portal(request):
     weeks = [{'number':1, 'title': 'Code, Power, and the Big Picture', 'description':'Our communities. Our country. Our code.'},
     {'number':2, 'title': 'Grassroots and Building Blocks', 'description':'User stories. Wireframes. Human-centered design. Linux. The BASH command line. Github pushes.'},

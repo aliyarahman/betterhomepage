@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block container %}
+{% load staticfiles %}
+
+<div class="jumbotron-title">
+    <div class="container">
+        <div class = "row">
+            <div class = "col-md-6">
+                <h1>Diversity survey</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+            <div class = "content">
+
+           <h3>Welcome to the survey.</h3>
+
+           <a class="presslink"><h3>Click here to begin.</h3></a>
+
+
+        <br><br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        {% if messages %}
+          {% for message in messages %}
+                <div id="message" class="alert alert-{% if 'error' in message.tags %}danger{% else %}{{ message.tags }}{% endif %}">
+                {{ message }}
+                </div>
+          {% endfor %}
+        {% endif %}
+
+    </div>
+</div>
+{% endblock %}
