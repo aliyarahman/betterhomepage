@@ -31,10 +31,28 @@
 
 </div>
 
-<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-<script async src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<script async src="{% static 'js/resizer.js' %}"> </script>
+<script>
+$('window').ready(function() {
+        console.log("Working?");
+        $('.jumbotron').each(function() {
+            var obj = $(this);
+            var imgHeight = $('img',obj).height();
+            $(this).height(imgHeight);
+        });
+
+        $( window ).resize(function() {
+          $('.jumbotron').each(function() {
+            var obj = $(this);
+            var imgHeight = $('img',obj).height();
+            $(this).height(imgHeight);
+        });
+        });
+
+});
+</script>
 
 {% endblock %}
