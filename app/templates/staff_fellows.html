@@ -14,53 +14,59 @@
     </div>
 
 
-    <div class="container content">
+  <div class="container content">
 
 
 
 <h2>2014 Fellows</h2>
 
     {% for fellow in fellows %}
-      <div class="row person_holder text-left" onClick='location.href="{% url 'fellow' fellow_firstname=fellow.first_name %}"'>
-          <div class="col-lg-3">
-            <img src="{% static 'img/'%}{{fellow.first_name}}.png" alt={{fellow.first_name}} />
-          </div>
-          
-          <div class="col-lg-8">
-            <h2 class="green_text">{{fellow.first_name}} {{fellow.last_name}}</h2>
-            <h4><span class="charcoal_text"><b>Originally from</b></span>: {{fellow.where_from}}</h4>
-            {% if fellow.current_job != "" %}<h4><span class="charcoal_text"><b>Hired as</b></span>:  {{fellow.current_job}}</h4>{% endif %}
-          </div>
+      <div class="row person_holder text-left">
+          <div class="row">
+            <div class="col-xs-3">
+              <img class="person-image" src="{% static 'img/'%}{{fellow.first_name}}.png" alt={{fellow.first_name}} />
+            </div>
+            
+            <div class="col-xs-6">
+              <h2 class="green_text">{{fellow.first_name}} {{fellow.last_name}}</h2>
+              <h4><span class="charcoal_text"><b>Originally from</b></span>: {{fellow.where_from}}</h4>
+              {% if fellow.current_job != "" %}<h4><span class="charcoal_text"><b>Hired as</b></span>:  {{fellow.current_job}}</h4>{% endif %}
+              <p><span class="charcoal_text"><b>About</b></span>: " {{fellow.page_text|truncatechars:140}}..." <a class="presslink" href="{% url 'fellow' fellow_firstname=fellow.first_name %}">Read more >>></a></p>
+            </div>
+        </div>
 
       </div>
     {% endfor %}
-
+</div>
+<div class="container content">
 
 
 <br><br><h2>Staff</h2>
 
-      <div class="row person_holder text-left" onClick='location.href="{% url 'executive_director' %}"'>
-          <div class="col-lg-3">
-            <img src="{% static 'img/michelle_small_headshot.jpg' %}" alt="Executive Director" />
+      <div class="row person_holder text-left">
+          <div class="col-xs-3">
+            <img class="person-image" src="{% static 'img/michelle_small_headshot.jpg' %}" alt="Executive Director" />
           </div>
           
-          <div class="col-lg-6">
+          <div class="col-xs-6">
             <h2 class="green_text">Michelle Fox</h2>
             <h4>Executive Director</h4>
+            <p>Michelle Fox is the first generation child of a Haitian immigrant turned proud SEIU 1199 member, who taught lessons of feminism and social and economic justice at the dinner table... <a class="presslink" href="{% url 'executive_director' %}">Read more >>></a></p>
 
           </div>
 
       </div>
     
-      <div class="row person_holder center-block" onClick='location.href="{% url 'program_director' %}"'>
+      <div class="row person_holder center-block">
         
           <div class="col-lg-3">
-            <img src="{% static 'img/aliya_small_headshot.jpg' %}" alt="Program Director" />
+            <img class="person-image" src="{% static 'img/aliya_small_headshot.jpg' %}" alt="Program Director" />
           </div>          
           
           <div class="col-lg-6">
             <h2 class="green_text">Aliya Rahman</h2>
             <h4>Program Director</h4>
+            <p>Aliya Rahman leads the recruitment, in-residence training, and job placement of Code for Progress fellows into full-time developer positions... <a class="presslink" href="{% url 'program_director' %}">Read more >>></a></p>
           </div>
 
       </div>
@@ -74,7 +80,7 @@
 <script>
 $(document).ready(function(){
 
-    $('img').on('mouseenter', function() {
+    $('.person-image').on('mouseenter', function() {
         var originalheight = $(this).height();
         var newheight = originalheight*1.2;
         $(this).animate({'height':'230px'}, 'fast');

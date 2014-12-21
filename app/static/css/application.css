@@ -295,11 +295,10 @@ h3 span {
 .person_holder {
   padding: 1em;
   margin: 2em;
-  box-shadow: 2px 2px 4px #696969;
 }
 
 .person_holder:hover {
-  box-shadow: 8px 8px 16px #696969;
+
 }
 
 .person_holder img {height: 200px;}
