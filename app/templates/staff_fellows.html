@@ -7,7 +7,7 @@
 
     <div class="jumbotron-title">
       <div class="container">
-          <div class = "col-md-3">
+          <div class = "col-xs-12">
                 <h1>Staff & Fellows</h1>
           </div>
       </div>
@@ -21,19 +21,18 @@
 <h2>2014 Fellows</h2>
 
     {% for fellow in fellows %}
-      <div class="row person_holder text-left">
-          <div class="row">
-            <div class="col-xs-3">
+      <div class="row person_holder">
+            <div class="col-sm-3 text-center">
               <img class="person-image" src="{% static 'img/'%}{{fellow.first_name}}.png" alt={{fellow.first_name}} />
             </div>
             
-            <div class="col-xs-6">
+            <div class="col-sm-7 col-sm-offset-2 col-md-offset-0">
               <h2 class="green_text">{{fellow.first_name}} {{fellow.last_name}}</h2>
               <h4><span class="charcoal_text"><b>Originally from</b></span>: {{fellow.where_from}}</h4>
               {% if fellow.current_job != "" %}<h4><span class="charcoal_text"><b>Hired as</b></span>:  {{fellow.current_job}}</h4>{% endif %}
               <p><span class="charcoal_text"><b>About</b></span>: " {{fellow.page_text|truncatechars:140}}..." <a class="presslink" href="{% url 'fellow' fellow_firstname=fellow.first_name %}">Read more >>></a></p>
             </div>
-        </div>
+
 
       </div>
     {% endfor %}
@@ -43,16 +42,15 @@
 
 <br><br><h2>Staff</h2>
 
-      <div class="row person_holder text-left">
-          <div class="col-xs-3">
+      <div class="row person_holder">
+          <div class="col-sm-3 text-center">
             <img class="person-image" src="{% static 'img/michelle_small_headshot.jpg' %}" alt="Executive Director" />
           </div>
           
-          <div class="col-xs-6">
+          <div class="col-sm-7 col-sm-offset-2 col-md-offset-0">
             <h2 class="green_text">Michelle Fox</h2>
             <h4>Executive Director</h4>
             <p>Michelle Fox is the first generation child of a Haitian immigrant turned proud SEIU 1199 member, who taught lessons of feminism and social and economic justice at the dinner table... <a class="presslink" href="{% url 'executive_director' %}">Read more >>></a></p>
-
           </div>
 
       </div>
@@ -81,12 +79,8 @@
 $(document).ready(function(){
 
     $('.person-image').on('mouseenter', function() {
-        var originalheight = $(this).height();
-        var newheight = originalheight*1.2;
-        $(this).animate({'height':'230px'}, 'fast');
+        $(this).animate({'height':'220px'}, 'fast');
     }).on('mouseleave', function() {
-        var originalheight = $(this).height();
-        var newheight = originalheight*0.83;
         $(this).animate({'height':'200px'}, 'fast');
     });
 

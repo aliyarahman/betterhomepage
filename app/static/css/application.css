@@ -30,6 +30,7 @@ a:focus {
   box-shadow: 2px 2px 4px #696969;
 }
 
+
 .btn-primary {
   background-color: #686868;
   border-color: #686868;
@@ -132,90 +133,19 @@ a:focus {
   height: 1em;
 }
 
-.twitter-icon:hover {
-
-}
 
 .fb-icon {
   height: 1em;
 }
+
 
 /* Jumbotron */
 
 
 .jumbotron {
   margin-bottom: 4em;
+
 }
-
-.block {display: block; clear: both;}
-
-.jumbotron img {
-  width: 100%;
-  position: absolute;
-  left: 0;
-}
-
-.change {
-   vertical-align; top;
-   height: 100%;
-   padding-left: 10%;
-   padding-right: 5%;
-   max-width: 150%;  /* for IE 6 */
-   background: black;
-   text-align: left;
-   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-   filter: alpha(opacity=70);  
-   -moz-opacity:0.7;
-   -khtml-opacity: 0.7; 
-   opacity: 0.7;
-}
-
-
-.change h1 { 
-   color: white; 
-   font: Helvetica, Sans-Serif; 
-   letter-spacing: -1px;
-   margin-bottom: -25px;
-}
-
-
-@media screen and (max-width: 1200px) {
-    .change h1 {font-size: 2.5em;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .change h1 {font-size: 2em;
-    }
-}
-
-@media screen and (max-width: 600px) {
-.change, change h1 {display: none;
-    }
-}
-
-.jumbotron input.form-control {
-    font-size: 18px;
-    padding: 20px;
-    border-radius: 0;
-}
-
-.jumbotron select.form-control {
-    padding: 20px;
-    height: 42px;
-    position: relative;
-    left: -5px;
-    border-radius: 0;
-}
-.jumbotron .btn {
-    padding: 40px 20px;
-    z-index: 1;
-    border-radius: 0;
-    margin: 0;
-    left: -12px;
-    position: relative;
-}
-
 
 
 .white_text {
@@ -256,26 +186,28 @@ h3 span {
 }
 
 
-.jumbotron-title {
-    background-color: #444;
-    color: #fff;
-    text-align: left;
-    padding-top: 4%;
-    padding-bottom: 1%;
-}
-
-
 .content {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.landing .landing--form {
-    background: transparent;
-    zoom: 1;
-    margin: 0 30px 0 30px;
-    padding: 20px 0;
-}
+
+
+.landing{/*behavior:url("/css/polyfills/backgroundsize.htc");*/
+background-color:#444;
+background-image:url(../img/grad_banner_trimmed.jpg);
+background-position:26% 0;
+background-size:cover;
+height:550px;
+color:#fff;
+text-align:center}
+
+@media screen and (min-width: 480px){.landing{background-position:35% 0}}
+@media screen and (min-width: 768px){.landing{background-position:bottom center}}
+
+
+
+
 
 .site-info{
   background-color: black;
