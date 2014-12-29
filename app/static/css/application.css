@@ -82,6 +82,7 @@ a:focus {
   padding-bottom: 10px;
 }
 
+
 .btn-contact:hover,
 .btn-contact:focus,
 .btn-contact:active,
@@ -108,11 +109,27 @@ a:focus {
 
 /* Navigation & Brand */
 
+
+.btn-grey {
+  background-color: #686868;
+}
+
 .navbar {
     border-radius: 0;
+    border: none;
     background-color: #aebe37;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     font-size: 20px;
+}
+
+.black-bg {
+  background-color: #000;
+}
+
+.black-bg h3 {
+  font-family: inherit;
+  margin-top: 0px;
+  margin-left: -10px;
 }
 
 .navbar-brand {
@@ -123,30 +140,28 @@ a:focus {
     color: #fff;
 }
 
-
 .navbar-toggle .icon-bar {
     background-color: #aebe37;
 }
 
-
 .twitter-icon {
   height: 1em;
-}
+    margin-top: -10px;
 
+}
 
 .fb-icon {
   height: 1em;
+  margin-top: -10px;
 }
 
 
 /* Jumbotron */
 
-
 .jumbotron {
   margin-bottom: 4em;
 
 }
-
 
 .white_text {
     color: #fff;

@@ -44,6 +44,25 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+
+  <div class="navbar black-bg">
+    <div class="container">
+          <ul>
+          <a class="navbar-brand" href="{% url 'home' %}"><h3>Code for Progress</h3></a>
+        </ul>
+        <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+            <li class='pull-right'><a href="https://twitter.com/codeforprogress" data-show-count="false" data-show-screen-name="false"><img class="twitter-icon" src="{% static 'img/twitter.png' %}"></a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+
+            <li class='pull-right'><a href="http://www.facebook.com/codeforprogress"><img class="fb-icon" src="{% static 'img/facebook.png' %}"></a></li>
+          </div>
+
+          </ul>
+
+    </div>
+  </div>
+
 	<div class="navbar navbar-default" role="navigation">
       <div class="container">
         <div class="navbar-header" href>
@@ -55,31 +74,32 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="{% url 'home' %}">Code for Progress</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
  	          <li class="btn-nav"><a href="{% url 'about' %}">About</a></li>
-            <li class="btn-nav"><a href="{% url 'staff_fellows' %}">Staff & Fellows</a></li>
-            <li class="btn-nav" ><a href="{% url 'press' %}">Press</a></li>
+<!--            <li class="btn-nav"><a href="{% url 'about' %}">The program</a></li> -->            
+<!--            <li class="btn-nav"><a href="{% url 'staff_fellows' %}">Staff & Fellows</a></li> -->
+<!--            <li class="btn-nav" ><a href="{% url 'press' %}">In the News</a></li> -->
+<!--            <li class="btn-nav" ><a href="{% url 'about' %}">Tech we've built</a></li> -->
 
             <li class="btn-nav"><a href="{% url 'apply' %}">Apply</a></li>
+
             <li class="btn-nav"><a href="{% url 'community' %}">Get Involved</a></li>
+<!--            <li class="btn-nav"><a href="{% url 'community' %}">Find an event or volunteer</a></li> -->
+<!--            <li class="btn-nav"><a href="{% url 'partner' %}">Partner</a></li> -->
+
+
             <li class="btn-nav" ><a href="{% url 'learn_portal' %}">Learn</a></li>
-            <li class="btn-nav"><a href="{% url 'partner' %}">Partner</a></li>
-          </ul>
 
-          <ul class = 'nav navbar-nav navbar-right'>
-
-            <li class="btn-nav"><a href="{% url 'contact' %}"><span class="glyphicon glyphicon-envelope"></span></a></li>
-            <li  class="btn-nav"><a href="{% url 'donate' %}"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-            
-            <li class="btn-nav"><a href="https://twitter.com/codeforprogress" data-show-count="false" data-show-screen-name="false"><img class="twitter-icon" src="{% static 'img/twitter.png' %}"></a>
-                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-
-            <li class="btn-nav"><a href="http://www.facebook.com/codeforprogress"><img class="fb-icon" src="{% static 'img/facebook.png' %}"></a></li>
 
           </ul>
+
+<ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+
+            <li class="btn-grey"><a href="{% url 'donate' %}"><b>Donate</b></a></li>
+</ul>
 
         </div><!--/.navbar-collapse -->
       </div>
