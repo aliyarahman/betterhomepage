@@ -29,6 +29,9 @@ def partner(request):
 def press(request):
     return render(request, "press.html")
 
+def tech(request):
+    return render(request, "tech.html")
+
 def staff_fellows(request):
     fellows = Fellow.objects.order_by('last_name')
     return render(request, "staff_fellows.html", {'fellows':fellows})
