@@ -3,4 +3,5 @@ venv
 betterhomepage/settings.py
 betterhomepage/settings_hidden.py
 dump*
+backup*
 split_out_tags.py
