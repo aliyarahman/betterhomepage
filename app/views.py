@@ -64,7 +64,7 @@ def learn_portal(request):
     {'number':7, 'title': 'Empowered APIs', 'description':'jQuery. APIs. RESTful services. JSON. XML. Ajax.'},
     {'number':8, 'title': 'Doors and Phones and Code and Power: Telling our communities\' stories through data', 'description':'Data visualization. d3. JSON.'},
     {'number':9, 'title': 'Architects and Model Glue: How social-justice software sticks together', 'description':'Model-view-whatever. Single-page applications. Angular.js'},
-    {'number':10, 'title': 'Who Runs the World? urls.', 'description':'How the internet works. Angular.js. Heroku. Basic deployment and dev-ops.'},
+    {'number':10, 'title': 'Who Runs the World? urls.', 'description':'How the internet works. Angular.js. Heroku. Basic deployment, workflow, and dev-ops.'},
     {'number':11, 'title': 'Huck, Quinn, Black, White', 'description':'The back end. Security. Python.'},
     {'number':12, 'title': 'Ten Thousand Sign-In Sheets', 'description':'Data. Python. JSON collections. The CSV library.'},
     {'number':13, 'title': 'Fast, Furious Data Driving: Databases and SQL for understanding communities', 'description':'Big data. Databases. SQL. PostgreSQL.'},
