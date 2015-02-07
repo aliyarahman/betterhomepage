@@ -46,6 +46,9 @@ def executive_director(request):
 def program_director(request):
     return render(request, "program_director.html")
 
+def board_chair(request):
+    return render(request, "board_chair.html")
+
 def thank_you(request):
     return render(request, "thankyou.html")
 

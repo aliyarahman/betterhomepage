@@ -42,8 +42,8 @@
 
 <br><br><h2>Staff</h2>
 
-      <div class="row person_holder">
-          <div class="col-sm-3 text-center">
+      <div class="row person_holder center_block">
+          <div class="col-sm-3">
             <img class="person-image" src="{% static 'img/michelle_small_headshot.jpg' %}" alt="Executive Director" />
           </div>
           
@@ -57,14 +57,28 @@
     
       <div class="row person_holder center-block">
         
-          <div class="col-lg-3">
+          <div class="col-sm-3">
             <img class="person-image" src="{% static 'img/aliya_small_headshot.jpg' %}" alt="Program Director" />
           </div>          
           
-          <div class="col-lg-6">
+          <div class="col-sm-7 col-sm-offset-2 col-md-offset-0">
             <h2 class="green_text">Aliya Rahman</h2>
             <h4>Program Director</h4>
             <p>Aliya Rahman leads the recruitment, in-residence training, and job placement of Code for Progress fellows into full-time developer positions... <a class="presslink" href="{% url 'program_director' %}">Read more >>></a></p>
+          </div>
+
+      </div>
+
+      <div class="row person_holder center-block">
+        
+          <div class="col-sm-3">
+            <img class="person-image" src="{% static 'img/dirk_small_headshot.jpg' %}" alt="Board Chair" />
+          </div>          
+          
+          <div class="col-sm-7 col-sm-offset-2 col-md-offset-0">
+            <h2 class="green_text">Dirk Wiggins</h2>
+            <h4>Board Chair</h4>
+            <p>Dirk Wiggins is the CEO a co-founder of echo19 communications, has previously spent a decade consulting in various positions for electoral political campaigns,... <a class="presslink" href="{% url 'board_chair' %}">Read more >>></a></p>
           </div>
 
       </div>

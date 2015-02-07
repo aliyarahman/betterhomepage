@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block container %}               
+
+{% load staticfiles %}
+
+
+<div class="jumbotron-title">
+    <div class="container">
+          <div class = "row">
+                 <a href="{% url 'staff_fellows' %}">
+                 <h3><span class="glyphicon glyphicon-chevron-left"></span> Back to staff and fellows</h3>
+                </a>
+          </div>
+    </div>
+</div>
+                
+
+<div class= "container">
+    <br><br>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+            <img width="300" height="300" src="{% static 'img/'%}dirk_small_headshot.jpg" alt='Board Chair' />
+        </div>
+        <div class = "col-md-5">
+         <h1>Board Chair and Founder</h1>
+         <h3>Dirk Wiggins</h3>            
+         <br><br>
+         <p>Dirk Wiggins is the CEO a co-founder of echo19 communications, has previously spent a decade consulting in various positions for electoral political campaigns, and another decade in tech development in higher education, governments, and startup enterprises. Over the years he's learned that talent is universal, but the opportunities to develop talent are not... yet.</p>
+
+<p>Seeing that the richness of ideas that come from diverse experiences and environments is missing from the field of technology development, Dirk worked to organize the Code for Progress team to change that dynamic. He lends his political and entrepreneurial outlook to Code for Progress and helps identify partnerships and opportunities to advance the mission.</p>
+
+<p>Dirk lives in DC, travels often, and misses the Arizona desert, but only in February.</p>
+        </div>          
+    </div>
+</div>
+                
+                                
+        
+{% endblock %}                                                                                                  
