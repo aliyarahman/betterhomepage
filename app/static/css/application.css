@@ -262,4 +262,6 @@ form ul#id_interested_in {padding-left: 0px;}
 
 .hidden_content {display:none;}
 
-.glyphicon-shopping-cart {margin: 0px; padding: 0px;}
+.greybox {background-color: #EEEEEE; padding: 20px; border-radius: 5px;}
+
+.greybox li {list-style: none; margin-bottom:15px;}

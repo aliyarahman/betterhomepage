@@ -23,6 +23,9 @@ def donate(request):
 def community(request):
     return render(request, "community.html")
 
+def hacknight(request):
+    return render(request, "hacknight.html")
+
 def partner(request):
     return render(request, "partner.html")
 
